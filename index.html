@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA9ms6xuxMRhucN3IIbSpAa04LTpb2fAg8",
+          authDomain: "trialproject-ebc65.firebaseapp.com",
+          projectId: "trialproject-ebc65",
+          storageBucket: "trialproject-ebc65.appspot.com",
+          messagingSenderId: "724206728328",
+          appId: "1:724206728328:web:fc4ddb130fb425e9921b3d",
+          measurementId: "G-46RFZX81PW"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Brotherhood of Engineers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="PBEimages\PBETransparentdark.png" type="image/x-icon">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a>
+        </div>
+        <div class="hamburger">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="index.html"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="recruitment.html">Recruitment</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<section class="footer">
+    <div class="social-links">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/pbetamu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="PBEimages\insta.png" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/company/pbe-tamu/"><img src="PBEimages\linkedin.png" alt="Linkedin"></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 PBE</p>
+    </div>
+</section>
+<button id="back-to-top" title="Back to top">&uarr;</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links li');
+        const backToTopButton = document.getElementById('back-to-top');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('change');
+        });
+
+        // Close the menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('change');
+            });
+        });
+
+        // Show the button when scrolled down 20px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+</script>
+</body>
+</html>
