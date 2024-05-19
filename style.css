@@ -1,16 +1,4 @@
 
-@keyframes transitionIn{
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-    
-  to{
-    opacity: 1;
-    transform: rotateX(0);
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -520,6 +508,7 @@ nav img {
   
   .nav-links ul li {
     position: relative;
+    
   }
   
   .nav-links ul li a {
@@ -569,10 +558,15 @@ nav img {
       width: 100%;
       padding: 20px;
       box-sizing: border-box;
+      align-items: flex-start;
+
+      
     }
   
     .nav-links.active {
       display: flex; /* Show nav links when active */
+      
+
     }
   
     .hamburger {
@@ -591,6 +585,7 @@ nav img {
     .hamburger.active .bar:nth-child(3) {
       transform: translateY(-10px) rotate(-45deg);
     }
+    
   }
 
 
