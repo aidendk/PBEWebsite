@@ -68,6 +68,7 @@
 </section>
 <button id="back-to-top" title="Back to top">&uarr;</button>
 
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const hamburger = document.querySelector('.hamburger');
@@ -102,8 +103,10 @@
         };
 
         backToTopButton.addEventListener('click', () => {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     });
 </script>
