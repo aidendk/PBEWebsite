@@ -661,7 +661,7 @@ nav img {
   .member-header h1{
     text-align: center;
     margin-top: 270px;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     opacity: 0.999999;
   }
@@ -925,7 +925,7 @@ nav img {
   .header {
     min-height: 95vh;
     width: 100%;
-    background-image: url("PBEimages/pbeZACH-transformed.png");
+    background-image: url("PBEimages/pbeZachSmaller-min.jpg");
     background-position: center;
     background-size: cover;
     position: relative;

@@ -82,13 +82,11 @@
             hamburger.classList.toggle('change');
         });
 
-        // Close the menu when the "X" button is clicked
         closeBtn.addEventListener('click', () => {
             navLinks.classList.remove('active');
             hamburger.classList.remove('change');
         });
 
-        // Close the menu when a link is clicked
         links.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -96,7 +94,6 @@
             });
         });
 
-        // Show the button when scrolled down 20px
         window.onscroll = function() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 backToTopButton.style.display = 'block';
@@ -104,6 +101,11 @@
                 backToTopButton.style.display = 'none';
             }
         };
+
+        backToTopButton.addEventListener('click', () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
     });
 </script>
 </body>
