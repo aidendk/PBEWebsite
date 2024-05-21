@@ -116,6 +116,16 @@
   height: 30px;  /* Adjust the size as needed */
 }
 
+
+.mail-icon {
+  position: absolute;
+  bottom: 10px;  /* Adjust the position as needed */
+  left: 10px;   /* Adjust the position as needed */
+  width: 30px;   /* Adjust the size as needed */
+  height: 30px;  /* Adjust the size as needed */
+  
+}
+
 .linkedin-icon img {
   width: 100%;
   height: auto;
@@ -236,8 +246,20 @@
 }
 
 .contact h1{
-  
-  margin-top: 50px;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+
+.contact .first{
+  margin-top: 30px;
+}
+
+.contact h2{
+  margin: 10px;
+}
+
+.contact .last{
+  margin-bottom: -90px;
 }
 
 
@@ -293,6 +315,39 @@
 }
 
 .speaker-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+  flex: 1;
+
+}
+
+.Social h2{
+  margin-top: 100px;
+  color: #76cee6; 
+  text-align: left; 
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+.social-content {
+  display: flex; /* Use flexbox to align items */
+  align-items: flex-start; /* Center align items vertically */
+}
+
+.social-photo {
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/Social.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+  /* Center the photo horizontally */
+}
+
+.social-content p {
   margin: 0; /* Remove default margin */
   font-size: 20px; /* Adjust font size as needed */
   line-height: 1.5; /* Adjust line height as needed */
@@ -600,6 +655,8 @@ nav img {
     opacity: 0.999999;
   }
 
+  
+
   .sub-header h1{
     text-align: center;
     margin-top: 270px;
@@ -761,6 +818,18 @@ nav img {
     margin-top: 20px;
   }
 
+  .social-content{
+    display: block; /* Use flexbox to align items */
+    align-items: flex-start; /* Center align items vertically */
+  }
+
+  .social-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-top: 20px;
+  }
+
   .speaker-content{
     display: block; /* Use flexbox to align items */
     align-items: flex-start; /* Center align items vertically */
@@ -786,6 +855,13 @@ nav img {
     height: 120px;
     background-position: center;
 
+  }
+
+  .social-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    
   }
 
 
@@ -817,7 +893,6 @@ nav img {
   
 
   .contact{
-    margin-top: -50px;
     font-size: 10px;
   }
   
