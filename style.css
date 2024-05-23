@@ -213,8 +213,59 @@ body { background-color: black }
   color: white; /* Black text */
   padding: 100px; /* Add some padding for better readability */
   text-align: center;
+}
+
+.recruitmentFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; 
+}
+
+.recruitment label{
+  color: #76cee6;
+  margin-bottom: -10px;
+  font-weight: bold;
 
 }
+
+.recruitment .email{
+  color: #76cee6;
+ 
+}
+
+.recruitmentFlex label::after{
+  content: '*';
+  color: rgb(255, 0, 0);
+}
+
+
+.recruitment input{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white; /* Optional: to make the text white */
+  padding: 10px;
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+.recruitment button{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white; /* Optional: to make the text white */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.recruitment button:hover{
+  background-color: #76cee6;
+  color: black;
+}
+
+
+
 
 .recruitment h2{
   margin-bottom: 40px;
@@ -225,6 +276,7 @@ body { background-color: black }
   justify-content: center;
   margin-bottom: -70px;
   width: 300px;
+  display: none;
 }
 
 .sub-header h1{
