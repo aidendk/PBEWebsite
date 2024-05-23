@@ -242,7 +242,7 @@
 
 .recruitment h1{
   margin-bottom: 40px;
-  margin-top: 50px;
+  margin-top: -50px;
 }
 
 .contact h1{
@@ -614,7 +614,7 @@ nav img {
       padding: 20px;
       box-sizing: border-box;
       align-items: flex-start;
-
+      
       
     }
   
@@ -645,7 +645,7 @@ nav img {
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 1003px) {
+@media screen and (max-width: 1024px) {
 
   .contact-header h1{
     text-align: center;
