@@ -198,7 +198,24 @@ body { background-color: black }
   position: relative;
 }
 
+.contact2-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/contacthigher.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
 .contact-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.contact2-header h1{
   text-align: center;
   margin-top: 100px;
   font-size: 50px;
@@ -208,11 +225,68 @@ body { background-color: black }
 
 
 
+
 .contact {
   background-color: black; /* White background */
   color: white; /* Black text */
   padding: 100px; /* Add some padding for better readability */
   text-align: center;
+}
+.contactus {
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  text-align: center;
+  h2{
+    margin-bottom: 80px;
+  }
+}
+
+.contactus .recruitment{
+  margin-top: -150px;
+}
+
+.recruitment {
+  max-width: 800px; /* Set the maximum width */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+}
+
+.contactFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.input-group {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.input-group-full {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.contactFlex input, .contactFlex textarea {
+  background-color: #000;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: white;
+}
+
+.large-input {
+  min-height: 150px;
+}
+
+.contactFlex label::after{
+  content: '*';
+  color: rgb(255, 0, 0);
 }
 
 .recruitmentFlex {
@@ -566,9 +640,19 @@ nav img {
   margin: 0 10px;
 }
 
+.footer .contact {
+  margin-top: -20px;
+    a{
+      color: white;
+      font-weight: bold;
+      font-size: large;
+    }
+}
+
 .footer ul li a img {
   width: 30px; /* Adjust size as needed */
   height: auto;
+  margin-top: -20px;
 }
 
 .footer .copyright {
@@ -710,6 +794,13 @@ nav img {
     opacity: 0.999999;
   }
 
+  .contact2-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
   
 
   .sub-header h1{
@@ -942,6 +1033,14 @@ nav img {
 
 
 @media screen and (max-width: 430px){
+  .contactFlex{
+    justify-content: center; 
+  }
+
+  .contactFlex .large-input{
+    width: 225px;
+  }
+
   .social-links{
     margin-bottom: 30px;
   }

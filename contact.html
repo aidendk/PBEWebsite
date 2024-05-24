@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,9 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="PBEimages\PBETransparentdark.png" type="image/x-icon">
     <meta name="theme-color" content="black">
+    <script type="text/javascript">
+        var submitted = false;
+
+        function validateForm() {
+            var inputs = document.querySelectorAll('.recruitmentFlex input[type="text"]');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value.trim() === "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+            }
+            submitted = true;
+            return true;
+        }
+    </script>
 </head>
 <body>
-<section class="contact-header">
+<section class="contact2-header">
   <nav>
     <div class="logo-container">
         <a href="index.html"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a>
@@ -27,58 +42,60 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="index.html"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a></li>
-            <li><a href="contact.html">Sponsors</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
             <li><a href="recruitment.html">Recruitment</a></li>
         </ul>
     </div>
   </nav>
-    <h1>Sponsors</h1>
+    <h1>Contact </h1>
   </section>
-  <section class = "contact">
-    <div>
-      <h1>Thank you to our amazing Alumni for their sponsorship!</h1>
-      <div style="border-top: 4px solid #76cee6 ; margin: 20px 0;"></div>
-        <h2 class = "first">Alan Nguyen'22</h2>
-        <h2>Ameen Bello'21</h2>
-        <h2>Anders Wiik'22</h2>
-        <h2>Brian Dobesh'23</h2>
-        <h2>Chris Perez'19</h2>
-        <h2>Dylan Langlois'23</h2>
-        <h2>Grant Riddle'22</h2>
-        <h2>Hayder Hilo'22</h2>
-        <h2>Jacob John'19</h2>
-        <h2>Jason Palmer'23</h2>
-        <h2>Kory Lanthier'23</h2>
-        <h2>Logan Valdez'23</h2>
-        <h2>Paul Verrett'22</h2>
-        <h2>Tyler Glenn'22</h2>
-        <h2>Umair Hasan'22</h2>
-        <h2 class = "last">Zaid Hilo'22</h2>
-    
-      
-
-
-    </div>
-
+  <section class="contactus">
+    <h2>Howdy, please fill out the form below and we will contact you shortly!</h2>
+    <section class="recruitment">
+        <div></div>
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){window.location='contactSent.html';}"></iframe>
+        <form class="contactFlex" action="https://docs.google.com/forms/d/e/1FAIpQLSc-2B3gZ5GyZjCL8CBLEfbWHRMWK4srOjRAgpzEBfDfjC8QiQ/formResponse" method="post" target="hiddenConfirm" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="entry.1180153643">First Name</label>
+                <input type="text" name="entry.1180153643" placeholder="First">
+            </div>
+            <div class="input-group">
+                <label for="entry.1975216193">Last Name</label>
+                <input type="text" name="entry.1975216193" placeholder="Last">
+            </div>
+            <div class="input-group">
+                <label for="entry.1251590548">Email</label>
+                <input type="text" name="entry.1251590548" placeholder="example@email.com">
+            </div>
+            <div class="input-group">
+                <label for="entry.1342795259">Subject</label>
+                <input type="text" name="entry.1342795259" placeholder="Subject">
+            </div>
+            <div class="input-group-full">
+                <label class="email" for="entry.1450922164">Description</label>
+                <textarea name="entry.1450922164" class="large-input" placeholder="Please list all details"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
   </section>
-  
   <section class="footer">
-    
     <div class="social-links">
         <h3>Follow Us</h3>
         <ul>
             <li><a href="https://www.instagram.com/pbetamu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="PBEimages\insta.png" alt="Instagram"></a>
             <li><a href="https://www.linkedin.com/company/pbe-tamu/"><img src="PBEimages\linkedin.png" alt="Linkedin"></a></li>
-            
+        </ul>
+        <h3>Questions or Concerns?</h3>
+        <ul class="contact">
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
     <div class="copyright">
       <p>&copy; 2024 PBE</p>
-  </div>
+    </div>
 </section>
 <button id="back-to-top" title="Back to top">&uarr;</button>
-
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const hamburger = document.querySelector('.hamburger');

@@ -2,16 +2,33 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Recruitment</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="PBEimages\PBETransparentdark.png" type="image/x-icon">
     <meta name="theme-color" content="black">
+    <script type="text/javascript">
+        var submitted = false;
+
+        function validateForm() {
+            // Get all input elements
+            var inputs = document.querySelectorAll('.recruitmentFlex input[type="text"]');
+            // Loop through inputs to check for empty values
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value.trim() === "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+            }
+            submitted = true;
+            return true;
+        }
+    </script>
 </head>
 <body>
-<section class="recruitment-header">
+<section class="contact2-header">
   <nav>
     <div class="logo-container">
         <a href="index.html"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a>
@@ -31,17 +48,19 @@
             <li><a href="recruitment.html">Recruitment</a></li>
         </ul>
     </div>
-</nav>
-    <h1>Recruitment</h1>
+  </nav>
+    <h1>Contact </h1>
   </section>
-  <section class = "recruitment">
-    
-      <h1>Thank you so much for your interest in joining PBE!</h1>
+  <section class = "contactus">
+    <h2>Thank you for submitting the form, we will send you an email shortly!</h2>
+    <section class = "recruitment">
+        <div>    
+          
+        </div>
+       
+          
+      </section>
 
-      <h2>We will send you an email when recruitment starts!</h2>
-    
-
-      
   </section>
   
   <section class="footer">
