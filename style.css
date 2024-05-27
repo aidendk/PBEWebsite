@@ -223,15 +223,16 @@ body { background-color: black }
   opacity: 0.999999;
 }
 
-
-
-
 .contact {
   background-color: black; /* White background */
   color: white; /* Black text */
   padding: 100px; /* Add some padding for better readability */
-  text-align: center;
+  text-align: center; 
+  .second{
+    display: none;
+  }
 }
+
 .contactus {
   background-color: black; /* White background */
   color: white; /* Black text */
@@ -1046,9 +1047,16 @@ nav img {
   }
   
 
-  .contact{
+  .contact {
     font-size: 10px;
-  }
+    .first{
+      display: none;
+    }
+
+    .second{
+      display: contents;
+    }
+}
   
   
 
