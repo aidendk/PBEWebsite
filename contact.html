@@ -13,7 +13,7 @@
         var submitted = false;
 
         function validateForm() {
-            var inputs = document.querySelectorAll('.recruitmentFlex input[type="text"]');
+            var inputs = document.querySelectorAll('.contactFlex input[type="text"], .contactFlex textarea');
             for (var i = 0; i < inputs.length; i++) {
                 if (inputs[i].value.trim() === "") {
                     alert("All fields must be filled out");
