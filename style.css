@@ -6,7 +6,10 @@
   
 }
 
-body { background-color: black } 
+body { 
+  background-color: black;
+  overflow-x: hidden; 
+} 
 
 .home-link {
   display: none;
@@ -550,9 +553,10 @@ body { background-color: black }
 nav {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 75px; /* Adjust the height as needed */
+  padding: 0 12px;
 }
 
 nav img {
@@ -664,6 +668,19 @@ nav img {
 }
 
 
+@media screen and (max-width: 1280px) {
+  nav {
+    
+    padding: 0 10px; /* Adjust padding */
+  }
+
+
+
+
+
+  
+}
+
 @media screen and (max-width: 1024px) {
   .logo-container{
     display: block;
@@ -733,6 +750,9 @@ nav img {
   }
   
   @media screen and (max-width: 1024px) {
+    body{
+      overflow-x: hidden;
+    }
     .header {
       flex-direction: column; /* Stack elements vertically on smaller screens */
       align-items: flex-start; /* Align items to the left */
@@ -829,6 +849,7 @@ nav img {
   }
   nav {
     height: 80px;
+    padding: 0px;
   }
 
   .home-link {
