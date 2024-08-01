@@ -141,6 +141,88 @@ body {
 }
 
 
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px;
+  background-color: #000000;
+}
+
+.login-container {
+  background: black;
+  outline-style: solid;
+  outline-color: #76cee6; /* You can change this color as needed */
+  outline-width: 2px; /* You can change the width as needed */
+  padding: 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-icon img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form select,
+form input[type="password"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button img {
+  width: 20px;
+}
+
+.submit-button {
+  background-color: #000000;
+  color: white;
+ outline-style: solid;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.5s;
+}
+
+.submit-button:hover {
+  background-color: #76cee6;
+  color: black;
+  outline-style: solid;
+  outline-color: white;
+  
+}
+
+
+
 
 
 
@@ -201,6 +283,23 @@ body {
   position: relative;
 }
 
+
+.login-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/zachloginOut.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.login-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
 .contact2-header{
   min-height: 50vh;
   width: 100%;
@@ -249,6 +348,7 @@ body {
 .contactus .recruitment{
   margin-top: -150px;
 }
+
 
 .recruitment {
   max-width: 800px; /* Set the maximum width */
@@ -343,7 +443,27 @@ body {
 }
 
 
+.recruitment .recruitment-form{
+  display: none;
+}
 
+.recruitment .recruitment-events{
+  text-decoration: underline;
+}
+
+.recruitment .recruitment-details{
+  margin-top: -35px;
+}
+
+.recruitment .recruitment-dates{
+  margin-top: -35px;
+  color: #76cee6;
+}
+
+.recruitment-schedule{
+  font-size: 14px;
+  margin-bottom: -120px;
+}
 
 .recruitment h2{
   margin-bottom: 40px;
@@ -370,7 +490,6 @@ body {
   color: white; /* Black text */
   padding: 100px; /* Add some padding for better readability */
   text-align: center;
-
 }
 
 .recruitment h1{
@@ -557,11 +676,13 @@ nav {
   align-items: center;
   height: 75px; /* Adjust the height as needed */
   padding: 0 12px;
+  
 }
 
 nav img {
   width: 270px;
   height: auto;
+  margin-left: 2%;
 }
 
 .nav-links {
@@ -674,6 +795,13 @@ nav img {
     padding: 0 10px; /* Adjust padding */
   }
 
+
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
 
 
 
@@ -840,6 +968,14 @@ nav img {
     opacity: 0.999999;
   }
 
+  .login-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
 
   .recruitment img {
     align-items: center;
@@ -948,7 +1084,7 @@ nav img {
     transform: translateY(-10px) rotate(-45deg);
   }
 
-  .nav-links ul li:nth-child(3) {
+  .nav-links ul li:nth-child(4) {
     display: none; /* Hide the middle link */
   }
 
@@ -1163,6 +1299,15 @@ nav img {
 
 
   .contact-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+  
+
+  .login-header h1{
     text-align: center;
     margin-top: 270px;
     font-size: 40px;
