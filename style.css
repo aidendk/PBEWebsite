@@ -56,7 +56,7 @@ body {
 .member-header{
   min-height: 50vh;
   width: 100%;
-  background-image: url("PBEimages/MembersBackground3-min.jpg");
+  background-image: url("PBEimages/MembersBackground3-min\ \(7\).jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -222,7 +222,9 @@ form button img {
 }
 
 
-
+button{
+  cursor: pointer;
+}
 
 
 
