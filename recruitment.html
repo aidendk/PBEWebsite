@@ -57,18 +57,30 @@
   </section>
   <section class = "recruitment">
     <h1>Recuritment for Fall 2024 has concluded! <br><br>Fill out the form below for Spring 2025 updates!</h1>
-    <div class = "recruitment-form">
-        <img src="PBEimages\Spring 24 Flyer Final.png">
-        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){window.location='./submitted';}"></iframe>
-        <form class="recruitmentFlex" action="https://docs.google.com/forms/d/e/1FAIpQLSdCcAADdMxZZWWhKw4HU7PcwMHNlHnKEsOCXu7XrxcL7MaziA/formResponse" method="post" target="hiddenConfirm" onsubmit="return validateForm()">
-            <label for="entry.1328555469">First Name</label><br>
-            <input type="text" name="entry.1328555469" placeholder="First"><br>
-            <label for="entry.1502007998">Last Name</label><br>
-            <input type="text" name="entry.1502007998" placeholder="Last"><br>
-            <label class="email" for="entry.1590393024">Email</label><br>
-            <input type="text" name="entry.1590393024" placeholder="example@email.com"><br>
-            <button type="submit">Submit</button>
-        </form>
+    <div class="recruitmentMedia"> 
+        <h2 style="font-size: 30px; margin-bottom: 10px; margin-top: 20px; ">Recruitment Video</h2>
+        <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pcwvhLIUrio?si=6lmv4YZV03SxkGGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <h2 style="font-size: 30px; margin-bottom: 10px; margin-top: 40px; ">Recruitment Update Form</h2>
+        <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
+        <div class="recruitment-form">
+            <img src="PBEimages\Spring 24 Flyer Final.png">
+            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){window.location='./submitted';}">
+            </iframe>
+            <form class="recruitmentFlex" action="https://docs.google.com/forms/d/e/1FAIpQLSdCcAADdMxZZWWhKw4HU7PcwMHNlHnKEsOCXu7XrxcL7MaziA/formResponse" 
+                  method="post" target="hiddenConfirm" onsubmit="return validateForm()">
+                <label for="entry.1328555469">First Name</label><br>
+                <input type="text" name="entry.1328555469" placeholder="First"><br>
+                <label for="entry.1502007998">Last Name</label><br>
+                <input type="text" name="entry.1502007998" placeholder="Last"><br>
+                <label class="email" for="entry.1590393024">Email</label><br>
+                <input type="text" name="entry.1590393024" placeholder="example@email.com"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
       
   </section>
