@@ -871,6 +871,12 @@ nav img {
 }
 
 
+.SponsorImage {
+  width: 110px;
+  height: auto;
+  margin: -20px 15px 90px 15px; /* Top, Right, Bottom, Left */
+}
+
 @media screen and (max-width: 1280px) {
   nav {
     
