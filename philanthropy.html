@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Professional Brotherhood of Engineers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="PBEimages\favicon.ico">
+    <meta name="theme-color" content="black">
+</head>
+<body>
+<section class="philanthropy-header">
+  <nav>
+    <div class="logo-container">
+        <a href="./"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a>
+    </div>
+    <div class="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+    </div>
+    <div class="nav-links">
+        <button class="close-btn">&times;</button>
+        <ul>
+            <li><a href="./about">About Us</a></li>
+            <li><a href="./members">Members</a></li>
+            <li><a href="./philanthropy">Philanthropy</a></li>
+            <li><a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a></li>
+            <li><a href="./recruitment">Recruitment</a></li>
+            <li><a href="./sponsors">Sponsors</a></li>
+            <li><a href="./login">Login Portal</a></li>
+        </ul>
+    </div>
+</nav>
+    <h1>Philanthropy</h1>
+  </section>
+  <section class="philanthropy">
+    <div>
+        <h2>Habitat for Humanity</h2>
+        <section class="speakers">
+          <h2>Cornhole Tournament</h2>
+          <div class="speaker-content">
+          <div class="cornhole-photo"></div>
+          <p>PBE recognizes the importance of connecting with current industry leaders to inspire and guide our diverse group of engineers. Our members have the unique opportunity to engage with these leaders through bi-weekly speaker sessions covering a wide range of industries. Past speakers have included professionals from esteemed organizations such as Google, General Motors, and innovative tech startups like Datalogz.
+          </p>
+        </div>
+        </section>
+
+        <section class="service">
+          <h2>Home Construction</h2>
+          <div class="service-content">
+          <div class="construction-photo"></div>
+          <p>At PBE, we are committed to making a positive impact both within and beyond our community. Our service initiatives include a variety of activities designed to foster teamwork, leadership, and a sense of selfless service among our members. Past service projects include: The Big Event, Park Cleanups, and Food Shelters.</p>
+          
+        </div>
+        </section>
+
+        <section class="Brotherhood">
+          <h2>Pumpkin Patch</h2>
+          <div class="brotherhood-content">
+          <div class="pumpkin-photo"></div>
+          <p>PBE fosters strong connections among our members, creating a supportive and enduring brotherhood. As engineering students, we understand the unique challenges of our field and are committed to supporting each other through dedicated mental health nights, cookout events, and a variety of member activities that provide a relaxed and enjoyable environment. Fostering a community where lifelong professional connections and friendships are formed, helping us navigate our academic journey and beyond.
+          </p>
+        </div>
+        </section>
+    </div>
+</section>
+  <section class="footer">
+    
+    <div class="social-links">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/pbetamu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><img src="PBEimages\insta.png" alt="Instagram"></a>
+            <li><a href="https://www.linkedin.com/company/pbe-tamu/" target="_blank" rel="noopener noreferrer"><img src="PBEimages\linkedin.png" alt="Linkedin"></a></li>
+            
+        </ul>
+        <h3>Want to reach out?</h3>
+        <ul class="contact">
+            <li><a href="./contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 PBE</p>
+  </div>
+</section>
+<button id="back-to-top" title="Back to top">&uarr;</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links li');
+        const closeBtn = document.querySelector('.close-btn');
+        const backToTopButton = document.getElementById('back-to-top');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('change');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('change');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('change');
+            });
+        });
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>
