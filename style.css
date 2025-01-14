@@ -704,7 +704,7 @@ button{
 .cornhole-photo {
   width: 500px; /* Adjust the width as needed */
   height: 350px; /* Adjust the height as needed */
-  background-image: url("PBEimages/CornholeTourny.png"); /* Add the path to your image */
+  background-image: url("PBEimages/CornholeTourny.jpg"); /* Add the path to your image */
   background-size: cover;
   background-position: left;
   margin-right: 20px;
@@ -789,7 +789,7 @@ button{
 .construction-photo{
   width: 500px; /* Adjust the width as needed */
   height: 350px; /* Adjust the height as needed */
-  background-image: url("PBEimages/HomeConstruction.png"); /* Add the path to your image */
+  background-image: url("PBEimages/HomeConstruction.jpg"); /* Add the path to your image */
   background-size: cover;
   background-position: left;
   margin-right: 20px;
@@ -826,7 +826,7 @@ button{
 .pumpkin-photo{
   width: 500px; /* Adjust the width as needed */
   height: 350px; /* Adjust the height as needed */
-  background-image: url("PBEimages/pumpkin.png"); /* Add the path to your image */
+  background-image: url("PBEimages/pumpkin.jpg"); /* Add the path to your image */
   background-size: cover;
   background-position: left;
   margin-right: 20px;
