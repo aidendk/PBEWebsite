@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Professional Brotherhood of Engineers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="PBEimages\favicon.ico">
+    <meta name="theme-color" content="black">
+</head>
+<body>
+<section class="philanthropy-header">
+  <nav>
+    <div class="logo-container">
+        <a href="./"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a>
+    </div>
+    <div class="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+    </div>
+    <div class="nav-links">
+        <button class="close-btn">&times;</button>
+        <ul>
+            <li><a href="./about">About Us</a></li>
+            <li><a href="./members">Members</a></li>
+            <li><a href="./philanthropy">Philanthropy</a></li>
+            <li><a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a></li>
+            <li><a href="./recruitment">Recruitment</a></li>
+            <li><a href="./sponsors">Sponsors</a></li>
+            <li><a href="./login">Login Portal</a></li>
+        </ul>
+    </div>
+</nav>
+    <h1>Philanthropy</h1>
+  </section>
+  <section class="aboutUs">
+    <div>
+        <h2 style="margin-top: -40px;">Habitat for Humanity</h2>
+        <p style="margin-top: -60px;">As PBE continues to grow each semester, it's important that we give back to the community that has supported us! We have partnered with Habitat for Humanity to help strengthen our community. From their Pumpkin Patch to our collaborative Cornhole Tournament, we are dedicated to improving the community we call home!</p>
+        <section class="speakers">
+          <h2>Cornhole Tournament</h2>
+          <div class="speaker-content">
+          <div class="cornhole-photo"></div>
+          <p> This past semester, we embraced the thrilling challenge of creating our own philanthropy event! With the incredible support of Habitat for Humanity and Blackwater Draw Brewing, we brought our vision to life by hosting an unforgettable Cornhole Tournament. Not only did we raise funds for a great cause, but we also created a vibrant, fun-filled atmosphere that brought our members and participants together to make a lasting impact on our community.  
+          </p>
+        </div>
+        </section>
+
+        <section class="service">
+          <h2>Home Construction</h2>
+          <div class="service-content">
+          <div class="construction-photo"></div>
+          <p>This semester, we truly put the "engineer" in PBE by assisting Habitat for Humanity with their home construction project. This gave our members the opportunity to showcase their engineering skills while making a meaningful contribution to the community. It was a rewarding experience that combined hands-on learning with the spirit of service, leaving a lasting impact on everyone involved!</p>
+          
+        </div>
+        </section>
+
+        <section class="Brotherhood">
+          <h2>Pumpkin Patch</h2>
+          <div class="brotherhood-content">
+          <div class="pumpkin-photo"></div>
+          <p>Along side the home construction, PBE partnered with Habitat for Humanity to support their annual Pumpkin Patch in the Bryan-College Station community. Our members dedicated their time and effort to setting up and maintaining the patch, ensuring it was beautifully organized and inviting, creating a fun and welcoming space for families to enjoy while actively giving back to the vibrant community we proudly call home.
+          </p>
+        </div>
+        </section>
+    </div>
+</section>
+  <section class="footer">
+    
+    <div class="social-links">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/pbetamu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><img src="PBEimages\insta.png" alt="Instagram"></a>
+            <li><a href="https://www.linkedin.com/company/pbe-tamu/" target="_blank" rel="noopener noreferrer"><img src="PBEimages\linkedin.png" alt="Linkedin"></a></li>
+            
+        </ul>
+        <h3>Want to reach out?</h3>
+        <ul class="contact">
+            <li><a href="./contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 PBE</p>
+  </div>
+</section>
+<button id="back-to-top" title="Back to top">&uarr;</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links li');
+        const closeBtn = document.querySelector('.close-btn');
+        const backToTopButton = document.getElementById('back-to-top');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('change');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('change');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('change');
+            });
+        });
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>

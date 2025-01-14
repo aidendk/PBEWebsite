@@ -45,6 +45,24 @@ body {
   opacity: 0.999999;
 }
 
+.philanthropy-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/philanthropyNew.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.philanthropy-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
 .recruitment-header h1{
   text-align: center;
   margin-top: 100px;
@@ -636,6 +654,41 @@ button{
   margin-bottom: 10px;
 }
 
+.philanthropy {
+  
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  padding-top: -50px;
+  margin-top: -30px;
+}
+
+
+.philanthropy h1{
+  margin-bottom: 30px;
+  margin-top: -40px;
+  font-size: 40px;
+  color: #76cee6;
+
+}
+
+.philanthropy h2 {
+  font-size: 24px; /* Example size for the heading */
+  margin-bottom: 30px; /* Add some space below the heading */
+  color: #76cee6;
+  text-align: center;
+  margin-bottom: 90px;
+  font-size: 40px;
+}
+
+.philanthropy .speakers h2{
+  margin-top: 50px;
+  color: #76cee6; 
+  text-align: left; 
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
 .speaker-content {
   display: flex; /* Use flexbox to align items */
   align-items: flex-start; /* Center align items vertically */
@@ -645,6 +698,16 @@ button{
   width: 500px; /* Adjust the width as needed */
   height: 350px; /* Adjust the height as needed */
   background-image: url("PBEimages/carSpeaker.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+  /* Center the photo horizontally */
+}
+
+.cornhole-photo {
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/CornholeTourny.png"); /* Add the path to your image */
   background-size: cover;
   background-position: left;
   margin-right: 20px;
@@ -726,6 +789,15 @@ button{
   margin-right: 20px;
 }
 
+.construction-photo{
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/HomeConstruction.png"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+}
+
 
 .Brotherhood h2{
   text-align: left;
@@ -754,6 +826,14 @@ button{
   margin-right: 20px;
 }
 
+.pumpkin-photo{
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/pumpkin.png"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+}
 nav {
   display: flex;
   width: 100%;
@@ -1254,6 +1334,33 @@ nav img {
 
   }
 
+  .pumpkin-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 5px;
+
+  }
+
+  .construction-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 5px;
+
+  }
+
+  .cornhole-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 5px
+
+  }
+
   .social-photo{
     width: 220px;
     height: 120px;
@@ -1367,6 +1474,16 @@ nav img {
   }
 
   .speakers h2{
+    text-align: center !important;
+    font-size: 25px !important;
+  }
+
+  .Brotherhood h2{
+    text-align: center !important;
+    font-size: 25px !important;
+  }
+
+  .service h2{
     text-align: center !important;
     font-size: 25px !important;
   }
