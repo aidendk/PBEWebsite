@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Firebase and Metadata -->
     <script type="module">
-        // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
           apiKey: "AIzaSyA9ms6xuxMRhucN3IIbSpAa04LTpb2fAg8",
           authDomain: "trialproject-ebc65.firebaseapp.com",
@@ -19,46 +14,22 @@
           appId: "1:724206728328:web:fc4ddb130fb425e9921b3d",
           measurementId: "G-46RFZX81PW"
         };
-      
-        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-      </script>
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Professional Brotherhood of Engineers",
-          "alternateName": ["pbe tamu", "pbe", "professional brotherhood of engineers tamu"],
-          "url": "https://pbetamu.com/"
-        }
-      </script>
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Brotherhood of Engineers</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="PBEimages\favicon.ico">
-    <meta name="theme-color" content="black">
-    <meta name="description" content="The purpose of the Professional Brotherhood of Engineers (PBE) is to create a brotherhood of engineers at Texas A&M University (TAMU) to thrive socially, academically, and professionally. PBE develops engineers for the future by focusing on professionalism through networking, social events and academics to become better leaders.">
-    <meta name="keywords" content="PBE, PBE TAMU, Professional Brotherhood of Engineers TAMU, PBE Texas A&M, Professional Brotherhood of Engineers Texas A&M, engineering fraternity, Texas A&M engineering, engineering society, TAMU engineering club, professional engineers, engineering network, Texas A&M university, engineering students, engineering organization, engineering community, engineering mentorship, engineering events, Texas A&M, Aggie engineers, engineering careers, engineering opportunities, student engineering group, TAMU engineering fraternity, engineering brotherhood, PBE members, PBE activities, engineering workshops, engineering seminars, engineering leadership, engineering innovation, engineering excellence, engineering projects, professional development for engineers, TAMU student organizations, Aggie network, engineering partnerships, engineering collaboration, engineering internships, engineering alumni, Texas A&M traditions, TAMU campus life, engineering scholarships, engineering achievements, Aggie engineers network, PBE Texas A&M University, engineering resources, engineering support, Texas A&M engineering program, Aggie engineering community">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="PBEimages/favicon.ico">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-46RFZX81PW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-46RFZX81PW');
-</script>
-
 <body>
 <section class="header">
     <nav>
         <div class="logo-container">
-            <a href="./"><img src="PBEimages\PBETransparentdark.png" alt="Logo"></a>
+            <a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a>
         </div>
         <div class="hamburger">
             <div class="bar bar1"></div>
@@ -79,12 +50,70 @@
         </div>
     </nav>
 </section>
+
+
+    <!-- Golf Tournament Button 
+    <div style="text-align:center; background:#76cee6; padding:20px;">
+    <a href="https://YOUR-TICKET-LINK.com" target="_blank" 
+        style="background:rgb(230, 66, 66); color:white; font-size:24px; padding:15px 30px; 
+                border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block;">
+        Join Our Annual Golf Tournament
+    </a>
+    </div>
+    -->
+
+
+    <!-- Events Calendar Section 
+    <section class="aboutUs">
+    <h2>Upcoming Events</h2>
+    <table style="width:100%; color:white; text-align:center; border-collapse:collapse;">
+        <tr><th>Date</th><th>Event</th><th>Type</th><th>Location</th></tr>
+        <tr><td>Feb 10</td><td>Valentine's Fundraiser</td><td style="color:orange;">Philanthropy</td><td>Main Hall</td></tr>
+        <tr><td>Mar 15</td><td>Community Cleanup</td><td style="color:green;">Social</td><td>Park Entrance</td></tr>
+        <tr><td>Apr 05</td><td>Industry Networking Night</td><td style="color:#76cee6;">Professional</td><td>Zachry 3rd Floor</td></tr>
+    </table>
+    </section>
+    -->
+    <!-- Member Achievements Section 
+    <section class="aboutUs">
+    <h2>Member Achievements</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
+        <div style="border:1px solid #76cee6; padding:20px; width:250px; text-align:center; color:white;">
+        <h3>Jane Doe '25</h3>
+        <p>Secured internship at SpaceX</p>
+        </div>
+        <div style="border:1px solid #76cee6; padding:20px; width:250px; text-align:center; color:white;">
+        <h3>John Smith '26</h3>
+        <p>1st Place in ASME Robotics Competition</p>
+        </div>
+    </div>
+    </section>
+    -->
+
+    <!-- Blog Section
+    <section class="aboutUs">
+    <h2>PBE Blog</h2>
+    <div style="display:flex; flex-direction:column; gap:30px;">
+        <div style="border:1px solid #76cee6; padding:20px; background:black; color:white;">
+        <h3>Cornhole Tournament Recap</h3>
+        <p><em>Feb 2025</em></p>
+        <p>This semester’s tournament brought together members and the community to raise funds for Habitat for Humanity...</p>
+        </div>
+        <div style="border:1px solid #76cee6; padding:20px; background:black; color:white;">
+        <h3>Habitat for Humanity Build Day</h3>
+        <p><em>Jan 2025</em></p>
+        <p>Members assisted in framing and roofing for a local home, showcasing teamwork and service...</p>
+        </div>
+    </div>
+    </section>
+    -->
+
 <section class="footer">
     <div class="social-links">
         <h3>Follow Us</h3>
         <ul>
-            <li><a href="https://www.instagram.com/pbetamu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><img src="PBEimages\insta.png" alt="Instagram"></a>
-            <li><a href="https://www.linkedin.com/company/pbe-tamu/" target="_blank" rel="noopener noreferrer"><img src="PBEimages\linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="https://www.instagram.com/pbetamu" target="_blank"><img src="PBEimages/insta.png" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/company/pbe-tamu/" target="_blank"><img src="PBEimages/linkedin.png" alt="Linkedin"></a></li>
         </ul>
         <h3>Want to reach out?</h3>
         <ul class="contact">
@@ -92,11 +121,11 @@
         </ul>
     </div>
     <div class="copyright">
-        <p>&copy; 2024 PBE</p>
+        <p>&copy; 2025 PBE</p>
     </div>
 </section>
-<button id="back-to-top" title="Back to top">&uarr;</button>
 
+<button id="back-to-top" title="Back to top">&uarr;</button>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const hamburger = document.querySelector('.hamburger');
@@ -109,33 +138,18 @@
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('change');
         });
-
         closeBtn.addEventListener('click', () => {
             navLinks.classList.remove('active');
             hamburger.classList.remove('change');
         });
-
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                hamburger.classList.remove('change');
-            });
-        });
-
+        links.forEach(link => link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('change');
+        }));
         window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
+            backToTopButton.style.display = (document.documentElement.scrollTop > 20) ? 'block' : 'none';
         };
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+        backToTopButton.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
     });
 </script>
 </body>

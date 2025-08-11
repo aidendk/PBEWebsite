@@ -59,30 +59,69 @@
 
   
   <section class = "recruitment">
-    <!-- <div>
-        <h1>Applications for Spring 2025 are open and due on January 25th! Join our Recruitment GroupMe for updates!</h1>
-     -->
+    <div>
+        <!--
+        <h1>Applications for Fall 2025 are open and due on September 5th! Join our Recruitment GroupMe for updates!</h1>
+        -->
+        
         <!-- Buttons Section -->
-        <!-- <div >
+        <!--
+        <div >
             <a href="https://forms.gle/D4zY5hDXWnHRoJVP7" target="_blank">
                 <button>Apply Now</button>
             </a>
         </div>
+        
         <a href="https://groupme.com/join_group/105193077/dxWgcNUd" target="_blank">
             <button>GroupMe</button>
         </a>
+        -->
     
         <h2>Explore our upcoming recruitment schedule below!</h2>
-    </div> -->
+    </div> 
+    
+    <!-- Recruitment countdown -->
+    <div id="countdown" style="text-align:center; color:white; font-size:28px; font-weight:700; margin-top:20px;">
+
+    Recruitment Opens In: <span id="timer"></span>
+    </div>
+
+    <script>
+    // ===== Manually set recruitment start date here =====
+    const recruitmentDate = new Date("August 24, 2025 18:00:00").getTime();
+
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = recruitmentDate - now;
+
+        if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = 
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        } else {
+        clearInterval(countdownFunction);
+        document.getElementById("countdown").innerHTML = 
+            `<span style="color:#76cee6;">Recruitment is Now Open!</span>`;
+        }
+    }, 1000);
+    </script>
+
+    
+    <!-- 
     <h1>Recruitment for Spring 2025 has concluded! <br><br>Fill out the form below for Fall 2025 updates!</h1>
+    -->
     <div class="recruitmentMedia"> 
         <h2 style="font-size: 30px; margin-bottom: 10px; margin-top: 20px; ">Recruitment Video</h2>
         <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pcwvhLIUrio?si=6lmv4YZV03SxkGGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        </div> 
 
-       <!--  <h2 style = "font-size: 30px; margin-bottom: 1px; margin-top: 15px;">Recruitment Schedule</h2>
+        <h2 style = "font-size: 30px; margin-bottom: 1px; margin-top: 15px;">Recruitment Schedule</h2>
       <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
       <div class = "recruitment-schedule">
         
@@ -90,7 +129,7 @@
             Applications open:
         </h2>
         <h2 class = "recruitment-dates">
-            1/13 - 1/25
+            8/24 - 9/05
         </h2>
 
         <h2 class = "recruitment-events">
@@ -100,9 +139,9 @@
             Zachary Engineering Complex
         </h2>
         <h2 class = "recruitment-dates">
-            1/13 - 1/21
+            8/25 - 8/29
         </h2>
-
+<!--
         <h2 class = "recruitment-events">
             MSC Open House:
         </h2>
@@ -112,31 +151,32 @@
         <h2 class = "recruitment-dates">
             1/19
         </h2>
+    -->
         <h2 class = "recruitment-events">
             Informational #1:
-        </h2>
-        <h2 class = "recruitment-details">
-            Blocker 102 @ 7:00pm - 7:45pm
-        </h2>
-        <h2 class = "recruitment-dates">
-            1/16
-        <h2 class = "recruitment-events">
-            Informational #2:
-        </h2>
-        <h2 class = "recruitment-details">
-            ILCB 205 @ 4:00pm - 5:00pm
-        </h2>
-        <h2 class = "recruitment-dates">
-            1/20
-        </h2>
-        <h2 class = "recruitment-events">
-           Linkedin Workshop:
         </h2>
         <h2 class = "recruitment-details">
             ILCB 205 @ 5:00pm - 6:00pm
         </h2>
         <h2 class = "recruitment-dates">
-            1/22
+            8/28
+        <h2 class = "recruitment-events">
+            Informational #2:
+        </h2>
+        <h2 class = "recruitment-details">
+            ILCB 205 @ 6:00pm - 7:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            8/29
+        </h2>
+        <h2 class = "recruitment-events">
+           Rec Night:
+        </h2>
+        <h2 class = "recruitment-details">
+            Student Rec Center / Main Rec @ 6:00pm - 9:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            9/02
         </h2>
         <h2 class = "recruitment-events">
             Pizza Profit Share:
@@ -145,31 +185,31 @@
             Blaze Pizza @ 6:00pm -9:00pm
         </h2>
         <h2 class = "recruitment-dates">
-            1/23
+            9/03
         </h2>
         <h2 class = "recruitment-events">
-            Rec Night:
+            Career Workshop:
         </h2>
         <h2 class = "recruitment-details">
-            Student Rec Center @ 6:00pm - 9:00pm
+            ILCB 205 @ 5:00pm - 6:00pm
         </h2>
         <h2 class = "recruitment-dates">
-            1/24
+            9/04
         </h2>
         <h2 class = "recruitment-events">
             Park Grill Out:
         </h2>
         </h2>
         <h2 class = "recruitment-details">
-            Tanglewood Park @ 3:00pm - 6:00pm
+            Sue Haswell Park @ 5:00pm - 7:00pm
         </h2>
         <h2 class = "recruitment-dates">
-            1/25
+            9/05
         </h2>
       </div>
-    </div> -->
+    </div>
 
-        <h2 style="font-size: 30px; margin-bottom: 10px; margin-top: 40px; ">Recruitment Update Form</h2>
+        <!-- <h2 style="font-size: 30px; margin-bottom: 10px; margin-top: 40px; ">Recruitment Update Form</h2>
         <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
         <div class="recruitment-form">
             <img src="PBEimages\Spring 24 Flyer Final.png">
@@ -185,7 +225,7 @@
                 <input type="text" name="entry.1590393024" placeholder="example@email.com"><br>
                 <button type="submit">Submit</button>
             </form>
-        </div> 
+        </div> --> 
     </div>
       
   </section>
