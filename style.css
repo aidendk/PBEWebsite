@@ -1587,7 +1587,52 @@ nav img {
   bottom: 10px;
   right: 20px;
 }
-
-
-
 }
+
+/* Donation Link button */
+.donate-cta { text-align:center; margin: 32px 0 56px; }
+.donate-cta h2 { margin: 0; }
+
+.donate-btn {
+  position: static !important;
+  display: inline-block;
+  background-color: #76cee6;
+  color: #fff;
+  padding: 16px 36px;   /* thicker/taller button on desktop */
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2em;     /* bigger text */
+  font-weight: 600;     /* extra bold */
+  line-height: 1.2;
+  border: 3px solid red;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .donate-cta { margin: 15vh 0 72px; padding: 0 16px; text-align: center; }
+  .donate-cta h2 { margin: 0; font-size: 1.2rem; line-height: 1.2; }
+
+  .donate-btn {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 12px 18px;              /* a bit slimmer on mobile */
+    font-size: 1rem;               /* smaller text for mobile */
+    font-weight: 600;
+    line-height: 1.15;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid red;
+  }
+
+  .first { flex-wrap: wrap; gap: 8px 24px; justify-content: center; }
+  .second { padding-bottom: 16px; }
+}
+
+/* Extra space so the button/back-to-top never overlap names */
+section.contact { padding-bottom: 96px; }
+
+
+
