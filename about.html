@@ -83,6 +83,20 @@
             </p>
           </div>
           </section>
+<!--
+        <div class="slider" id="slider1">
+            <div class="slides">
+                <figure class="slide"><img src="PBEimages/photo1.jpg" alt="Event 1"></figure>
+                <figure class="slide"><img src="PBEimages/photo2.jpg" alt="Event 2"></figure>
+                <figure class="slide"><img src="PBEimages/photo3.jpg" alt="Event 3"></figure>
+                <figure class="slide"><img src="PBEimages/photo3.jpg" alt="Event 3"></figure>
+            </div>
+
+            <button class="nav-btn nav-prev" type="button">‹</button>
+            <button class="nav-btn nav-next" type="button">›</button>
+            <div class="dots"></div>
+        </div>
+-->
 
         <!-- Blog Section
         <section class="aboutUs">
@@ -165,5 +179,48 @@
         });
     });
 </script>
+
+<!--Photo image slider
+<script>
+(function makeSlider(root, {interval=4000} = {}) {
+  const slidesEl = root.querySelector('.slides');
+  const slideEls = Array.from(root.querySelectorAll('.slide'));
+  const prevBtn = root.querySelector('.nav-prev');
+  const nextBtn = root.querySelector('.nav-next');
+  const dotsEl = root.querySelector('.dots');
+  const N = slideEls.length;
+
+  let index = 0, timer = null;
+
+  slideEls.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.className = 'dot'; b.type = 'button';
+    b.addEventListener('click', () => go(i));
+    dotsEl.appendChild(b);
+  });
+
+  function setTransform() {
+    slidesEl.style.transform = `translateX(${-index * 100}%)`;
+    dotsEl.querySelectorAll('.dot').forEach((d,i)=>d.setAttribute('aria-current', i===index ? 'true' : 'false'));
+  }
+
+  function go(i) { index = (i + N) % N; setTransform(); }
+  function next() { go(index+1); }
+  function prev() { go(index-1); }
+
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
+
+  function start() { stop(); timer = setInterval(next, interval); }
+  function stop() { if (timer) clearInterval(timer); }
+
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+
+  setTransform(); start();
+})(document.getElementById('slider1'), { interval: 4500 });
+</script>
+-->
+
 </body>
 </html>
