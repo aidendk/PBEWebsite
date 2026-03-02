@@ -1671,4 +1671,125 @@ section.contact { padding-bottom: 96px; }
   width:9px; height:9px; border-radius:50%;
   background:#fff; opacity:.6; border:0; cursor:pointer;
 }
-.dot[aria-current="true"] { background:#ef4444; opacity:1 }
+.dot[aria-current="true"] { background:#76cee6; opacity:1 }
+
+
+/* Golf tournament button */
+.center-brand{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+}
+
+.center-brand img{
+    height:34px;
+}
+
+/* Golf button */
+.golf-btn{
+    font-size:12px;
+    font-weight:700;
+    padding:6px 14px;
+    border-radius:999px;
+    text-decoration:none;
+    color:white;
+    background:#76cee6;
+    box-shadow:0 6px 18px rgba(230,70,70,.45);
+    white-space:nowrap;
+}
+
+.golf-btn:hover{
+    background:#76cee6;
+}
+/* Center logo + button stack (desktop) */
+.center-brand{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+}
+
+/* Mobile button styling inside hamburger menu */
+.golf-btn-mobile{
+  display:none;               /* hidden on desktop */
+  margin:14px auto 8px;
+  text-align:center;
+  width:fit-content;
+}
+
+/* Simple show/hide helpers */
+.desktop-only{ display:list-item; }
+
+@media (max-width: 768px){
+  .desktop-only{ display:none; }  /* hide center button on mobile */
+  .golf-btn-mobile{ display:inline-block; } /* show mobile button */
+}
+
+/* member of the month styles */
+.motm{
+  padding: 30px 8%;
+}
+
+.motm-card{
+  display:flex;
+  gap:22px;
+  align-items:center;
+  justify-content:space-between;
+  padding:22px;
+  border-radius:16px;
+  background: rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(8px);
+}
+
+.motm-left h2{
+  margin:0;
+  font-size:22px;
+}
+
+.motm-month{
+  margin:6px 0 10px;
+  opacity:.8;
+}
+
+.motm-name{
+  margin:0 0 8px;
+  font-size:26px;
+}
+
+.motm-why{
+  margin:0 0 14px;
+  opacity:.9;
+  max-width:520px;
+}
+
+.motm-btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  color:#fff;
+  background:#76cee6;
+}
+
+.motm-right img{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border-radius:14px;
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+/* mobile */
+@media (max-width: 768px){
+  .motm-card{
+    flex-direction:column-reverse;
+    text-align:center;
+  }
+  .motm-right img{
+    width:160px;
+    height:160px;
+  }
+}
