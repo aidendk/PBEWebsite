@@ -1916,17 +1916,23 @@ section.contact { padding-bottom: 96px; }
   }
 
   /* Make the mobile golf button NOT huge / not floating */
-  .golf-btn.golf-btn-mobile{
-    width: fit-content;
-    max-width: 100%;
-    margin: 8px auto 0;
-    padding: 8px 10px;        /* same as other links */
-    font-size: 16px;           /* same as other links */
-    border-radius: 10px;       /* subtle, not pill */
-    box-shadow: none;          /* remove glow in menu */
-    background: rgba(118, 206, 230, 0.18);
-    color: #fff;
-  }
+.golf-btn.golf-btn-mobile{
+  display: inline-flex;      
+  align-items: center;
+  justify-content: center;
+
+  width: auto !important;   
+  min-width: 0;
+  margin: 14px auto 0;
+
+  padding: 6px 10px;         
+  font-size: 14px;
+
+  border-radius: 999px;
+  box-shadow: none;
+  background: rgba(118, 206, 230, 0.18);
+  color: #fff;
+}
 
   .golf-btn.golf-btn-mobile:hover{
     background: rgba(118, 206, 230, 0.28);
