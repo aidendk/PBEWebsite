@@ -1,157 +1,136 @@
+<!-- index.html (FULL corrected) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Firebase and Metadata -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
-        const firebaseConfig = {
-          apiKey: "AIzaSyA9ms6xuxMRhucN3IIbSpAa04LTpb2fAg8",
-          authDomain: "trialproject-ebc65.firebaseapp.com",
-          projectId: "trialproject-ebc65",
-          storageBucket: "trialproject-ebc65.appspot.com",
-          messagingSenderId: "724206728328",
-          appId: "1:724206728328:web:fc4ddb130fb425e9921b3d",
-          measurementId: "G-46RFZX81PW"
-        };
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Brotherhood of Engineers</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="PBEimages/favicon.ico">
+  <!-- Firebase and Metadata -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9ms6xuxMRhucN3IIbSpAa04LTpb2fAg8",
+      authDomain: "trialproject-ebc65.firebaseapp.com",
+      projectId: "trialproject-ebc65",
+      storageBucket: "trialproject-ebc65.appspot.com",
+      messagingSenderId: "724206728328",
+      appId: "1:724206728328:web:fc4ddb130fb425e9921b3d",
+      measurementId: "G-46RFZX81PW"
+    };
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Brotherhood of Engineers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="PBEimages/favicon.ico">
 </head>
+
 <body>
-<section class="header">
+  <section class="header">
     <nav>
-        <div class="logo-container">
-            <a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a>
-        </div>
-        <div class="hamburger">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-        </div>
-        <div class="nav-links">
-            <button class="close-btn">&times;</button>
-            <ul>
-                <li><a href="./about">About Us</a></li>
-                <li><a href="./members">Members</a></li>
-                <li><a href="./philanthropy">Philanthropy</a></li>
-                <li>
-                    <a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a>
-                    <!-- Golf button UNDER CENTER LOGO -->
-                    <div>
-                    <a 
-                        href="https://forms.gle/3GKhfcA6sTAFL2wd7"
-                        target="_blank"
-                        class="golf-btn">
-                        PBE Classic Golf Tournament
-                    </a>
-                    </div>
+      <div class="logo-container">
+        <a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a>
+      </div>
 
-                </li>
-                <li><a href="./recruitment">Recruitment</a></li>
-                <li><a href="./sponsors">Sponsors</a></li>
-                <li><a href="./login">Login Portal</a></li>
+      <div class="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
 
-                <!-- MOBILE GOLF BUTTON (shows in hamburger menu) -->
-                <a href="https://forms.gle/3GKhfcA6sTAFL2wd7" target="_blank" class="golf-btn golf-btn-mobile">PBE Classic
-                </a>
-
-
-            </ul>
-        </div>
-    </nav>
-</section>
-
-
-    <!-- Golf Tournament Button 
-    <div style="text-align:center; background:; padding:20px;">
-    <a href="https://YOUR-TICKET-LINK.com" target="_blank" 
-        style="background:rgb(230, 66, 66); color:white; font-size:24px; padding:15px 30px; 
-                border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block;">
-        Join Our Annual Golf Tournament
-    </a>
-    </div>
-    -->
-
-
-    <!-- Events Calendar Section 
-    <section class="aboutUs">
-    <h2>Upcoming Events</h2>
-    <table style="width:100%; color:white; text-align:center; border-collapse:collapse;">
-        <tr><th>Date</th><th>Event</th><th>Type</th><th>Location</th></tr>
-        <tr><td>Feb 10</td><td>Valentine's Fundraiser</td><td style="color:orange;">Philanthropy</td><td>Main Hall</td></tr>
-        <tr><td>Mar 15</td><td>Community Cleanup</td><td style="color:green;">Social</td><td>Park Entrance</td></tr>
-        <tr><td>Apr 05</td><td>Industry Networking Night</td><td style="color:#76cee6;">Professional</td><td>Zachry 3rd Floor</td></tr>
-    </table>
-    </section>
-    -->
-    <!-- Member Achievements Section 
-    <section class="aboutUs">
-    <h2>Member Achievements</h2>
-    <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
-        <div style="border:1px solid #76cee6; padding:20px; width:250px; text-align:center; color:white;">
-        <h3>Jane Doe '25</h3>
-        <p>Secured internship at SpaceX</p>
-        </div>
-        <div style="border:1px solid #76cee6; padding:20px; width:250px; text-align:center; color:white;">
-        <h3>John Smith '26</h3>
-        <p>1st Place in ASME Robotics Competition</p>
-        </div>
-    </div>
-    </section>
-    -->
-
-
-<section class="footer">
-    <div class="social-links">
-        <h3>Follow Us</h3>
+      <div class="nav-links">
+        <button class="close-btn" type="button">&times;</button>
         <ul>
-            <li><a href="https://www.instagram.com/pbetamu" target="_blank"><img src="PBEimages/insta.png" alt="Instagram"></a></li>
-            <li><a href="https://www.linkedin.com/company/pbe-tamu/" target="_blank"><img src="PBEimages/linkedin.png" alt="Linkedin"></a></li>
+          <li><a href="./about">About Us</a></li>
+          <li><a href="./members">Members</a></li>
+          <li><a href="./philanthropy">Philanthropy</a></li>
+
+          <!-- Center logo only on desktop -->
+          <li class="desktop-only">
+            <a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a>
+          </li>
+
+          <li><a href="./recruitment">Recruitment</a></li>
+          <li><a href="./sponsors">Sponsors</a></li>
+          <li><a href="./login">Login Portal</a></li>
+
+          <!-- Mobile-only golf button (inside hamburger menu) -->
+          <li>
+            <a href="https://forms.gle/3GKhfcA6sTAFL2wd7"
+               target="_blank"
+               rel="noopener"
+               class="golf-btn golf-btn-mobile">
+              PBE Classic Golf Tournament
+            </a>
+          </li>
         </ul>
-        <h3>Want to reach out?</h3>
-        <ul class="contact">
-            <li><a href="./contact">Contact Us</a></li>
-        </ul>
+      </div>
+    </nav>
+
+    <!-- Desktop/tablet announcement bar UNDER the nav (NOT inside <ul>) -->
+    <div class="announcement-bar">
+      <a href="https://forms.gle/3GKhfcA6sTAFL2wd7"
+         target="_blank"
+         rel="noopener"
+         class="golf-btn">
+        PBE Classic Golf Tournament
+      </a>
     </div>
+  </section>
+
+  <section class="footer">
+    <div class="social-links">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/pbetamu" target="_blank" rel="noopener"><img src="PBEimages/insta.png" alt="Instagram"></a></li>
+        <li><a href="https://www.linkedin.com/company/pbe-tamu/" target="_blank" rel="noopener"><img src="PBEimages/linkedin.png" alt="Linkedin"></a></li>
+      </ul>
+
+      <h3>Want to reach out?</h3>
+      <ul class="contact">
+        <li><a href="./contact">Contact Us</a></li>
+      </ul>
+    </div>
+
     <div class="copyright">
-        <p>&copy; 2025 PBE</p>
+      <p>&copy; 2025 PBE</p>
     </div>
-</section>
+  </section>
 
-<button id="back-to-top" title="Back to top">&uarr;</button>
-<script>
+  <button id="back-to-top" title="Back to top">&uarr;</button>
+
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const links = document.querySelectorAll('.nav-links li');
-        const closeBtn = document.querySelector('.close-btn');
-        const backToTopButton = document.getElementById('back-to-top');
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li a');
+      const closeBtn = document.querySelector('.close-btn');
+      const backToTopButton = document.getElementById('back-to-top');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('change');
-        });
-        closeBtn.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('change');
-        });
-        links.forEach(link => link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('change');
-        }));
-        window.onscroll = function() {
-            backToTopButton.style.display = (document.documentElement.scrollTop > 20) ? 'block' : 'none';
-        };
-        backToTopButton.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+
+      links.forEach(link => link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      }));
+
+      window.onscroll = function() {
+        backToTopButton.style.display = (document.documentElement.scrollTop > 20) ? 'block' : 'none';
+      };
+
+      backToTopButton.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
     });
-</script>
+  </script>
 </body>
 </html>
