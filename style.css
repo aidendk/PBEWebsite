@@ -1686,6 +1686,24 @@ section.contact { padding-bottom: 96px; }
     height:34px;
 }
 
+.header {
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35); /* darkens image */
+    z-index: 1;
+}
+
+.hero-button-wrapper {
+    text-align: center;
+    margin-top: 60px; /* space from top */
+    margin-bottom: 30px; /* space before headline */
+}
+
 /* Golf button */
 .golf-btn{
     font-size:12px;
