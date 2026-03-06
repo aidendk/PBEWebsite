@@ -1705,17 +1705,16 @@ section.contact { padding-bottom: 96px; }
 }
 
 /* Announcement bar under nav */
-.announcement-bar{
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 14px 12px;
-  background: rgba(0,0,0,0);
-  backdrop-filter: blur(8px);
-  border-top: 1px solid rgba(255,255,255,0);
-  border-bottom: 1px solid rgba(255,255,255,0);
+.announcement-bar {
+  position: absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
 }
 
 .header { position: relative; }
@@ -1860,7 +1859,7 @@ section.contact { padding-bottom: 96px; }
   justify-content: center;
   padding: 14px 12px;
   background: rgba(0,0,0,0);
-  backdrop-filter: blur(8px);
+  backdrop-filter: transparent(8px);
   border-top: 1px solid rgba(255,255,255,0);
   border-bottom: 1px solid rgba(255,255,255,0);
 }
@@ -1945,4 +1944,210 @@ section.contact { padding-bottom: 96px; }
 /* Only show it on mobile */
 @media (max-width: 768px){
   .golf-btn-mobile{ display: block !important; }
+}
+
+/* ===== Final Mobile/Tablet Nav Override (active stylesheet) ===== */
+@media (max-width: 1024px){
+  body.nav-open{
+    overflow: hidden;
+  }
+
+  /* On tablet/mobile, use the menu golf button only */
+  .announcement-bar{
+    display: none !important;
+  }
+
+  .desktop-only{
+    display: none !important;
+  }
+
+  .mobile-only-nav-item{
+    display: list-item !important;
+  }
+
+  nav{
+    position: relative;
+    z-index: 60;
+  }
+
+  .hamburger{
+    position: relative;
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: 0;
+    box-shadow: none;
+    display: grid !important;
+    place-items: center;
+    transition: background 0.22s ease, opacity 0.22s ease, transform 0.22s ease;
+  }
+
+  body.nav-open .hamburger{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-8px);
+  }
+
+  .bar{
+    margin: 3px 0;
+    width: 20px;
+    height: 2px;
+    margin-left: 0;
+    transition: transform 0.24s ease, opacity 0.2s ease;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(5px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-5px) rotate(-45deg);
+  }
+
+  .nav-links{
+    display: block !important;
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 90 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.24s ease;
+    background: rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(4px);
+  }
+
+  .nav-links ul,
+  .nav-links.active ul{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    height: 100% !important;
+    width: min(82vw, 420px) !important;
+    padding: calc(76px + env(safe-area-inset-top, 0px)) 18px calc(22px + env(safe-area-inset-bottom, 0px)) !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    list-style: none;
+    background: linear-gradient(160deg, rgba(7, 14, 23, 0.97), rgba(12, 32, 46, 0.94)) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 14px 0 32px rgba(0, 0, 0, 0.45);
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transform: translateX(-105%);
+    transition: transform 0.34s cubic-bezier(0.22, 0.9, 0.25, 1);
+    overflow-y: auto;
+  }
+
+  .nav-links.active{
+    opacity: 1;
+    pointer-events: auto;
+    background: rgba(5, 10, 18, 0.18) !important;
+    backdrop-filter: blur(2px);
+  }
+
+  .nav-links.active ul{
+    transform: translateX(0);
+  }
+
+  .nav-links ul li,
+  .nav-links.active ul li{
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links ul li{
+    opacity: 0;
+    transform: translateX(14px);
+    transition: transform 0.3s ease, opacity 0.24s ease;
+  }
+
+  .nav-links.active ul li{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-links.active ul li:nth-child(1){ transition-delay: 0.04s; }
+  .nav-links.active ul li:nth-child(2){ transition-delay: 0.07s; }
+  .nav-links.active ul li:nth-child(3){ transition-delay: 0.10s; }
+  .nav-links.active ul li:nth-child(4){ transition-delay: 0.13s; }
+  .nav-links.active ul li:nth-child(5){ transition-delay: 0.16s; }
+  .nav-links.active ul li:nth-child(6){ transition-delay: 0.19s; }
+  .nav-links.active ul li:nth-child(7){ transition-delay: 0.22s; }
+  .nav-links.active ul li:nth-child(8){ transition-delay: 0.25s; }
+
+  .nav-links ul li a,
+  .nav-links.active ul li a{
+    display: block !important;
+    width: min(92%, 320px) !important;
+    padding: 11px 12px !important;
+    border-radius: 10px;
+    font-size: 16px !important;
+    line-height: 1.25;
+    text-align: center;
+    color: #f7fbff;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4px);
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  }
+
+  .nav-links ul li a:hover{
+    background: rgba(118, 206, 230, 0.16);
+    color: #d8f4ff;
+    transform: translateX(3px);
+  }
+
+  .close-btn{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    right: auto;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    font-size: 23px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .close-btn:hover{
+    background: rgba(118, 206, 230, 0.18);
+    border-color: rgba(118, 206, 230, 0.45);
+  }
+
+  .golf-btn.golf-btn-mobile{
+    width: 100% !important;
+    margin-top: 10px;
+    padding: 10px 12px !important;
+    justify-content: center;
+    border: 1px solid rgba(118, 206, 230, 0.42);
+    background: rgba(118, 206, 230, 0.2);
+    color: #effbff;
+  }
+}
+
+@media (max-width: 768px){
+  .nav-links ul,
+  .nav-links.active ul{
+    width: min(88vw, 360px) !important;
+  }
 }
