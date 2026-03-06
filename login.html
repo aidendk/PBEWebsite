@@ -9,33 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="icon" href="PBEimages/favicon.ico">
     <meta name="theme-color" content="black">
+  <script src="components/page-hero.js" defer></script>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="components/back-to-top.js" defer></script>
+  <script src="components/site-behavior.js" defer></script>
 </head>
 <body>
-<section class="login-header">
-  <nav>
-    <div class="logo-container">
-        <a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a>
-    </div>
-    <div class="hamburger">
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
-    </div>
-    <div class="nav-links">
-        <button class="close-btn">&times;</button>
-        <ul>
-            <li><a href="./about">About Us</a></li>
-            <li><a href="./members">Members</a></li>
-            <li><a href="./philanthropy">Philanthropy</a></li>
-            <li><a href="./"><img src="PBEimages/PBETransparentdark.png" alt="Logo"></a></li>
-            <li><a href="./recruitment">Recruitment</a></li>
-            <li><a href="./sponsors">Sponsors</a></li>
-            <li><a href="./login">Login Portal</a></li>
-        </ul>
-    </div>
-  </nav>
-    <h1>Login Portal</h1>
-</section>
+<div data-page-hero data-hero-class="login-header" data-hero-title="Login Portal"></div>
 
 <!-- Login Form Section -->
 <section class="login-section">
@@ -57,92 +38,9 @@
     </div>
 </section>
 
-<section class="footer">
-    <div class="social-links">
-        <h3>Follow Us</h3>
-        <ul>
-            <li><a href="https://www.instagram.com/pbetamu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><img src="PBEimages/insta.png" alt="Instagram"></a></li>
-            <li><a href="https://www.linkedin.com/company/pbe-tamu/" target="_blank" rel="noopener noreferrer"><img src="PBEimages/linkedin.png" alt="Linkedin"></a></li>
-        </ul>
-        <h3>Want to reach out?</h3>
-        <ul class="contact">
-            <li><a href="./contact">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2024 PBE</p>
-    </div>
-</section>
-<button id="back-to-top" title="Back to top">&uarr;</button>
+<div id="site-footer"></div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const links = document.querySelectorAll('.nav-links li');
-        const closeBtn = document.querySelector('.close-btn');
-        const backToTopButton = document.getElementById('back-to-top');
+  <div id="site-back-to-top"></div>
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('change');
-        });
-
-        closeBtn.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('change');
-        });
-
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                hamburger.classList.remove('change');
-            });
-        });
-
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        };
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Redirect based on selected member
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting the traditional way
-            const username = document.getElementById('username').value;
-            let url;
-
-            switch (username) {
-                case 'Members':
-                    url = 'https://drive.google.com/drive/folders/1PzWpZqYmwKeEOuwwfU6P5cOtFOEPmzjY?usp=drive_link';
-                    break;
-                case 'Officers':
-                    url = 'https://drive.google.com/drive/u/1/folders/0AJ9GYNCaZ4TuUk9PVA';
-                    break;
-                case 'Alumni':
-                    url = 'https://drive.google.com/drive/folders/1CrKxTmvOmpcUELJG4kbXz5Nzy8IeqwGD?usp=drive_link';
-                    break;
-                case 'Sweethearts':
-                    url = 'https://drive.google.com/drive/folders/1qqFvj55Zig71Ld2U-oJe6rH_6kfa02Ej?usp=sharing';
-                    break;
-                // Add more cases as needed
-                default:
-                    url = './';
-                    break;
-            }
-
-            window.location.href = url;
-        });
-    });
-</script>
 </body>
 </html>
