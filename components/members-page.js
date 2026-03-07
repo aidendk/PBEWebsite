@@ -44,7 +44,7 @@
   }
 
   const officersSorted = [...data.officers].sort((a, b) =>
-    a.name.localeCompare(b.name)
+    a.role.localeCompare(b.role)
   );
 
   root.innerHTML =

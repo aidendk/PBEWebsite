@@ -46,7 +46,7 @@ window.PBE_MEMBERS = {
   officers: [
     {
       name: 'Ricardo Mejia',
-      role: 'Web Master',
+      role: 'Webmaster',
       image: 'PBEimages/MemberImages/Ricky_M-EDITN.JPG',
       linkedin: 'https://www.linkedin.com/in/ricardo-mejia-m8/'
     },
