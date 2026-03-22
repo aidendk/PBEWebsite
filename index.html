@@ -2,23 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Firebase and Metadata -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
-    const firebaseConfig = {
-      apiKey: "AIzaSyA9ms6xuxMRhucN3IIbSpAa04LTpb2fAg8",
-      authDomain: "trialproject-ebc65.firebaseapp.com",
-      projectId: "trialproject-ebc65",
-      storageBucket: "trialproject-ebc65.appspot.com",
-      messagingSenderId: "724206728328",
-      appId: "1:724206728328:web:fc4ddb130fb425e9921b3d",
-      measurementId: "G-46RFZX81PW"
-    };
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Brotherhood of Engineers</title>
   <link rel="stylesheet" href="style.css">
@@ -26,9 +9,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="PBEimages/favicon.ico">
+  <script src="components/home-hero.js" defer></script>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="components/back-to-top.js" defer></script>
+  <script src="components/site-behavior.js" defer></script>
 </head>
 
 <body>
+  <div data-home-hero></div>
+
+  <div id="site-footer"></div>
+
+  <div id="site-back-to-top"></div>
+
+  </body>
   <section class="header">
     <nav>
       <div class="logo-container">
