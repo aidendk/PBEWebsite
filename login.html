@@ -35,6 +35,7 @@
             </select>
             <button class ="submit-button" type="submit">Proceed</button>
         </form>
+        <p id="login-message" class="login-message" aria-live="polite"></p>
     </div>
 </section>
 
@@ -42,5 +43,37 @@
 
   <div id="site-back-to-top"></div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loginForm = document.getElementById('loginForm');
+      const usernameSelect = document.getElementById('username');
+      const loginMessage = document.getElementById('login-message');
+
+      if (!loginForm || !usernameSelect || !loginMessage) return;
+
+      const routes = {
+        Members: 'https://drive.google.com/drive/folders/1PzWpZqYmwKeEOuwwfU6P5cOtFOEPmzjY?usp=drive_link',
+        Officers: 'https://drive.google.com/drive/u/2/folders/0AJ9GYNCaZ4TuUk9PVA',
+        Alumni: 'https://drive.google.com/drive/folders/1CrKxTmvOmpcUELJG4kbXz5Nzy8IeqwGD?usp=drive_link',
+        Sweethearts: 'https://drive.google.com/drive/folders/1qqFvj55Zig71Ld2U-oJe6rH_6kfa02Ej?usp=drive_link'
+      };
+     
+
+      loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const selectedPortal = usernameSelect.value;
+        const destination = routes[selectedPortal];
+
+        if (destination && destination.trim()) {
+          window.location.href = destination;
+          return;
+        }
+
+        loginMessage.textContent =
+          'Add the Google Drive link for ' + selectedPortal + ' in login.html.';
+      });
+    });
+  </script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <section class="header">
       <div id="site-navbar"></div>
 
+      <!--
       <div class="announcement-bar">
         <a
           href="https://forms.gle/3GKhfcA6sTAFL2wd7"
@@ -16,6 +17,7 @@
           PBE Classic Golf Tournament
         </a>
       </div>
+      -->
     </section>
   `;
 })();
