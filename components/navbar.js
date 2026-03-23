@@ -26,9 +26,6 @@
           <li><a href="./recruitment">Recruitment</a></li>
           <li><a href="./sponsors">Sponsors</a></li>
           <li><a href="./login">Login Portal</a></li>
-          <li class="mobile-only-nav-item">
-            <a href="https://forms.gle/3GKhfcA6sTAFL2wd7" target="_blank" rel="noopener" class="golf-btn golf-btn-mobile">PBE Classic</a>
-          </li>
         </ul>
       </div>
     </nav>
