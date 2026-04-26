@@ -85,6 +85,13 @@ For `index.html`, use:
 - `<div data-home-hero></div>` instead of `data-page-hero`
 
 ## How To Add A New Page
+Run the boilerplate generator:
+   ```bash
+   ./components/new-page.sh <page-name> "Page Title"
+   ```
+   Example: `./new-page.sh about "About Us"`
+
+Or if you prefer manual setup:
 1. Copy an existing page (e.g. `about.html`) as your starting template.
 2. Update the `<title>`.
 3. Update `data-page-hero` attributes:
