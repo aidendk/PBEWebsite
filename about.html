@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Professional Brotherhood of Engineers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="PBEimages\favicon.ico">
+    <meta name="theme-color" content="black">
+  <script src="components/page-hero.js" defer></script>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="components/back-to-top.js" defer></script>
+  <script src="components/site-behavior.js" defer></script>
+</head>
+<body>
+<div data-page-hero data-hero-class="sub-header" data-hero-title="About Us"></div>
+  <section class="aboutUs">
+    <div>
+      <h1>Mission Statement</h1>
+  
+        <p>
+          The purpose of PBE is to create a brotherhood of engineers to thrive socially, academically, and professionally. PBE develops engineers for the future by focusing on professionalism through networking, social events and academics to become better leaders. 
+
+          </p>
+        <h2>Semester Activities</h2>
+        <section class="speakers">
+          <h2>Guest Speakers</h2>
+          <div class="speaker-content">
+          <div class="speaker-photo"></div>
+          <p>PBE recognizes the importance of connecting with current industry leaders to inspire and guide our diverse group of engineers. Our members have the unique opportunity to engage with these leaders through bi-weekly speaker sessions covering a wide range of industries. Past speakers have included professionals from esteemed organizations such as Google, General Motors, and innovative tech startups like Datalogz.
+          </p>
+        </div>
+        </section>
+
+        <section class="service">
+          
+          
+          <h2>Service</h2>
+          <div class="service-content">
+          <div class="service-photo"></div>
+          <p>At PBE, we are committed to making a positive impact both within and beyond our community. Our service initiatives include a variety of activities designed to foster teamwork, leadership, and a sense of selfless service among our members. Past service projects include: The Big Event, Park Cleanups, and Food Shelters.</p>
+          
+        </div>
+        </section>
+
+        <section class="Brotherhood">
+          <h2>Brotherhood</h2>
+          <div class="brotherhood-content">
+          <div class="brotherhood-photo"></div>
+          <p>PBE fosters strong connections among our members, creating a supportive and enduring brotherhood. As engineering students, we understand the unique challenges of our field and are committed to supporting each other through dedicated mental health nights, cookout events, and a variety of member activities that provide a relaxed and enjoyable environment. Fostering a community where lifelong professional connections and friendships are formed, helping us navigate our academic journey and beyond.
+          </p>
+        </div>
+        </section>
+
+        <section class="Social">
+            <h2>Social</h2>
+            <div class="social-content">
+            <div class="social-photo"></div>
+            <p>
+                At PBE, we're all about creating a place where we can let loose and have a good time together. From karaoke nights to mixers, our calendar is packed with amazing events that bring us closer. We're not just about hanging with our brothers—we're also about connecting with other women organizations and sororities, making our circle even bigger and more diverse. These events aren't just about having fun; they're about forging friendships that stick around, making our college journey even more memorable.
+            </p>
+          </div>
+          </section>
+<!--
+        <div class="slider" id="slider1">
+            <div class="slides">
+                <figure class="slide"><img src="PBEimages/photo1.jpg" alt="Event 1"></figure>
+                <figure class="slide"><img src="PBEimages/photo2.jpg" alt="Event 2"></figure>
+                <figure class="slide"><img src="PBEimages/photo3.jpg" alt="Event 3"></figure>
+                <figure class="slide"><img src="PBEimages/photo3.jpg" alt="Event 3"></figure>
+            </div>
+
+            <button class="nav-btn nav-prev" type="button">‹</button>
+            <button class="nav-btn nav-next" type="button">›</button>
+            <div class="dots"></div>
+        </div>
+-->
+
+        <!-- Blog Section
+        <section class="aboutUs">
+        <h2>PBE Blog</h2>
+        <div style="display:flex; flex-direction:column; gap:30px;">
+            <div style="border:1px solid #76cee6; padding:20px; background:black; color:white;">
+            <h3>Cornhole Tournament Recap</h3>
+            <p><em>Feb 2025</em></p>
+            <p>This semester’s tournament brought together members and the community to raise funds for Habitat for Humanity...</p>
+            </div>
+            <div style="border:1px solid #76cee6; padding:20px; background:black; color:white;">
+            <h3>Habitat for Humanity Build Day</h3>
+            <p><em>Jan 2025</em></p>
+            <p>Members assisted in framing and roofing for a local home, showcasing teamwork and service...</p>
+            </div>
+        </div>
+        </section>
+         -->
+
+    </div>
+</section>
+  <div id="site-footer"></div>
+
+  <div id="site-back-to-top"></div>
+
+<!--Photo image slider
+<script>
+(function makeSlider(root, {interval=4000} = {}) {
+  const slidesEl = root.querySelector('.slides');
+  const slideEls = Array.from(root.querySelectorAll('.slide'));
+  const prevBtn = root.querySelector('.nav-prev');
+  const nextBtn = root.querySelector('.nav-next');
+  const dotsEl = root.querySelector('.dots');
+  const N = slideEls.length;
+
+  let index = 0, timer = null;
+
+  slideEls.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.className = 'dot'; b.type = 'button';
+    b.addEventListener('click', () => go(i));
+    dotsEl.appendChild(b);
+  });
+
+  function setTransform() {
+    slidesEl.style.transform = `translateX(${-index * 100}%)`;
+    dotsEl.querySelectorAll('.dot').forEach((d,i)=>d.setAttribute('aria-current', i===index ? 'true' : 'false'));
+  }
+
+  function go(i) { index = (i + N) % N; setTransform(); }
+  function next() { go(index+1); }
+  function prev() { go(index-1); }
+
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
+
+  function start() { stop(); timer = setInterval(next, interval); }
+  function stop() { if (timer) clearInterval(timer); }
+
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+
+  setTransform(); start();
+})(document.getElementById('slider1'), { interval: 4500 });
+</script>
+-->
+
+</body>
+</html>
