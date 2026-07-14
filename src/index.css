@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pbe-blue: #76cee6;
+  --color-pbe-blue-light: #d8f4ff;
+  --color-pbe-blue-tint: #effbff;
+  --color-pbe-blue-pale: #f7fbff;
+  --color-pbe-ink: #05080d;
+  --color-pbe-ink-soft: #0b1018;
+  --font-sans: 'Poppins', sans-serif;
+  --font-heading: 'Istok Web', sans-serif;
+  --font-display: 'Anton', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-pbe-ink);
+}
+
+::selection {
+  background-color: var(--color-pbe-blue);
+  color: #05080d;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-pbe-blue);
+  outline-offset: 2px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

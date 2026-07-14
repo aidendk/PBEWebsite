@@ -1,0 +1,2161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  
+}
+
+body { 
+  background-color: black;
+  overflow-x: hidden; 
+} 
+
+.home-link {
+  display: none;
+}
+.logo-container{
+  display: none;
+}
+
+.header {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("PBEimages/pbeZachSmaller-min.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.sub-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/groupPhotoNMTSmaller-min.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.sub-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.philanthropy-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/philanthropyNew.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.philanthropy-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.recruitment-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.member-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/MembersBackground3-min\ \(7\).jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.member-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.member {
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  text-align: center;
+}
+
+.member h1 {
+  margin-bottom: 40px;
+  margin-top: -60px;
+  color: #76cee6;
+}
+
+.member {
+  background-color: black;
+  color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+.member h1 {
+  margin-bottom: 40px;
+  color: #76cee6;
+}
+
+.member-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: -70px;
+}
+
+.member-item {
+  position: relative;
+  width: 200px;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+
+.linkedin-icon {
+  position: absolute;
+  bottom: 10px;  /* Adjust the position as needed */
+  right: 10px;   /* Adjust the position as needed */
+  width: 30px;   /* Adjust the size as needed */
+  height: 30px;  /* Adjust the size as needed */
+}
+
+
+.mail-icon {
+  position: absolute;
+  bottom: 10px;  /* Adjust the position as needed */
+  left: 10px;   /* Adjust the position as needed */
+  width: 30px;   /* Adjust the size as needed */
+  height: 30px;  /* Adjust the size as needed */
+  
+}
+
+.linkedin-icon img {
+  width: 100%;
+  height: auto;
+}
+.member-item img {
+  width: 100%;
+}
+
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px;
+  background-color: #000000;
+}
+
+.login-container {
+  background: black;
+  outline-style: solid;
+  outline-color: #76cee6; /* You can change this color as needed */
+  outline-width: 2px; /* You can change the width as needed */
+  padding: 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-icon img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.login-message {
+  min-height: 24px;
+  margin-top: 14px;
+  color: #76cee6;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form select,
+form input[type="password"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button img {
+  width: 20px;
+}
+
+.submit-button {
+  background-color: #000000;
+  color: white;
+ outline-style: solid;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.5s;
+}
+
+.submit-button:hover {
+  background-color: #76cee6;
+  color: black;
+  outline-style: solid;
+  outline-color: white;
+  
+}
+
+
+button{
+  cursor: pointer;
+}
+
+
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #000;
+}
+
+
+
+.member-info {
+  padding: 10px;
+}
+
+.member-info h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.member-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.member-info .member-name {
+  /* cursor: pointer; /* Change cursor to pointer when hovering */
+  /* text-decoration: underline; Optional: add underline to indicate link */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #76cee6;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 10px; /* Adds curved edges */
+  color: white;
+}
+
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-image img {
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.modal-info {
+  flex: 1;
+}
+
+
+.recruitment-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/recruitment.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/ContactFinal.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.login-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/zachloginOut.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.login-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.contact2-header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("PBEimages/Contact.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.contact2-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.contact {
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  text-align: center; 
+  .second{
+    display: none;
+  }
+}
+
+.contactus {
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  text-align: center;
+  h2{
+    margin-bottom: 80px;
+  }
+}
+
+.contactus .recruitment{
+  margin-top: -150px;
+}
+
+
+.recruitment {
+  max-width: 800px; /* Set the maximum width */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  button{
+    width: 110px;
+  }
+}
+
+.contactFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.input-group {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.input-group-full {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.contactFlex input, .contactFlex textarea {
+  background-color: #000;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: white;
+}
+
+.large-input {
+  min-height: 150px;
+}
+
+.contactFlex label::after{
+  content: '*';
+  color: rgb(255, 0, 0);
+}
+
+.recruitmentFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; 
+}
+
+.recruitment label{
+  color: #76cee6;
+  margin-bottom: -10px;
+  font-weight: bold;
+
+}
+
+.recruitment .email{
+  color: #76cee6;
+ 
+}
+
+.recruitmentFlex label::after{
+  content: '*';
+  color: rgb(255, 0, 0);
+}
+
+
+.recruitment input{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white; /* Optional: to make the text white */
+  padding: 10px;
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+.recruitment button{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white; /* Optional: to make the text white */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.recruitment button:hover{
+  background-color: #76cee6;
+  color: black;
+}
+
+
+.recruitment .recruitment-form{
+  
+}
+
+.recruitment .recruitment-events{
+  text-decoration: underline;
+}
+
+.recruitment .recruitment-details{
+  margin-top: -35px;
+}
+
+.recruitment .recruitment-dates{
+  margin-top: -35px;
+  color: #76cee6;
+}
+
+.recruitment-schedule{
+  font-size: 14px;
+  margin-bottom: -120px;
+}
+
+.recruitment h2{
+  margin-bottom: 40px;
+}
+
+.recruitment img {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -70px;
+  width: 300px;
+  display: none;
+}
+
+.sub-header h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: white;
+  opacity: 0.999999;
+}
+
+.recruitment {
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  text-align: center;
+}
+
+.recruitment h1{
+  margin-bottom: 40px;
+  margin-top: -50px;
+}
+
+
+
+.contact h1{
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+
+.contact .first{
+  margin-top: 30px;
+}
+
+.contact h2{
+  margin: 10px;
+}
+
+.contact .last{
+  margin-bottom: -90px;
+}
+
+
+.aboutUs {
+  
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  padding-top: -50px;
+  margin-top: -30px;
+}
+
+
+.aboutUs h1{
+  margin-bottom: 30px;
+  margin-top: -40px;
+  font-size: 40px;
+  color: #76cee6;
+
+}
+
+.aboutUs h2 {
+  font-size: 24px; /* Example size for the heading */
+  margin-bottom: 30px; /* Add some space below the heading */
+  color: #76cee6;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 90px;
+  font-size: 40px;
+}
+
+.aboutUs .speakers h2{
+  margin-top: 50px;
+  color: #76cee6; 
+  text-align: left; 
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.philanthropy {
+  
+  background-color: black; /* White background */
+  color: white; /* Black text */
+  padding: 100px; /* Add some padding for better readability */
+  padding-top: -50px;
+  margin-top: -30px;
+}
+
+
+.philanthropy h1{
+  margin-bottom: 30px;
+  margin-top: -40px;
+  font-size: 40px;
+  color: #76cee6;
+
+}
+
+.philanthropy h2 {
+  font-size: 24px; /* Example size for the heading */
+  margin-bottom: 30px; /* Add some space below the heading */
+  color: #76cee6;
+  text-align: center;
+  margin-bottom: 90px;
+  font-size: 40px;
+}
+
+.philanthropy .speakers h2{
+  margin-top: 50px;
+  color: #76cee6; 
+  text-align: left; 
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.speaker-content {
+  display: flex; /* Use flexbox to align items */
+  align-items: flex-start; /* Center align items vertically */
+}
+
+.speaker-photo {
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/carSpeaker.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+  /* Center the photo horizontally */
+}
+
+.cornhole-photo {
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/CornholeTourny.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+  /* Center the photo horizontally */
+}
+
+.speaker-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+  flex: 1;
+
+}
+
+.Social h2{
+  margin-top: 100px;
+  color: #76cee6; 
+  text-align: left; 
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+.social-content {
+  display: flex; /* Use flexbox to align items */
+  align-items: flex-start; /* Center align items vertically */
+}
+
+.social-photo {
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/Social.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+  /* Center the photo horizontally */
+}
+
+.social-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+  flex: 1;
+
+}
+
+
+.aboutUs p {
+  font-size: 20px; /* Example size for paragraphs */
+  line-height: 1.6; /* Example line height */
+  margin-bottom: 10px; /* Add some space between paragraphs */
+  margin-top: 40px;
+}
+
+.service h2{
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.service-content{
+  display: flex; /* Use flexbox to align items */
+  align-items: flex-start; /* Center align items vertically */
+}
+
+.service-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+  flex: 1;
+  margin-top: 30px;
+}
+.service-photo{
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/indownloader.app_picture_0093131001715713830.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+}
+
+.construction-photo{
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/HomeConstruction.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+}
+
+
+.Brotherhood h2{
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.brotherhood-content{
+  display: flex; /* Use flexbox to align items */
+  align-items: flex-start; /* Center align items vertically */
+  
+}
+
+.brotherhood-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+  flex: 1;
+  margin-top: 30px;
+}
+.brotherhood-photo{
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/brotherhood.JPG"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+}
+
+.pumpkin-photo{
+  width: 500px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the height as needed */
+  background-image: url("PBEimages/pumpkin.jpg"); /* Add the path to your image */
+  background-size: cover;
+  background-position: left;
+  margin-right: 20px;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px; /* Adjust the height as needed */
+  padding: 0 12px;
+  
+}
+
+nav img {
+  width: 270px;
+  height: auto;
+  margin-left: 2%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center links horizontally */
+  align-items: center;
+}
+
+.nav-links ul li {
+  margin: 0 20px; /* Reduce margin for smaller screens */
+  position: relative; /* Added for positioning the ::after pseudo-element */
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative; /* Ensure the anchor tag has a stacking context */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.nav-links ul li a:hover {
+  color: #76cee6; /* Change color on hover */
+}
+
+.centered-image {
+  position: absolute;
+  top: -50px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centered-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+/* Hamburger bars */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0 ;
+  transition: transform 0.3s ease-in;
+}
+.footer {
+  background-color: #000000; /* Change as needed */
+  color: white;
+  padding: 55px 20px; /* Adjust padding to make the footer taller for smaller screens */
+  text-align: center;
+  position: relative; /* Position relative for absolute positioning of the copyright */
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin: 0 10px;
+}
+
+.footer .contact {
+  margin-top: -20px;
+    a{
+      color: white;
+      font-weight: bold;
+      font-size: large;
+    }
+}
+
+.footer ul li a img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  margin-top: -20px;
+}
+
+.footer .copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.SponsorImage {
+  width: 110px;
+  height: auto;
+  margin: -20px 15px 90px 15px; /* Top, Right, Bottom, Left */
+}
+
+@media screen and (max-width: 1280px) {
+  nav {
+    
+    padding: 0 10px; /* Adjust padding */
+  }
+
+
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+
+
+
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-container{
+    display: block;
+  }
+  .footer {
+    background-color: #000000; /* Change as needed */
+    color: white;
+    padding: 55px !important; /* Adjust padding to make the footer taller for smaller screens */
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning of the copyright */
+  }
+
+
+  
+  
+  .logo-container {
+    flex-grow: 1; /* Take remaining space */
+    text-align: center; /* Center align the logo */
+  }
+  
+  .logo-container img {
+    max-width: 200px; /* Adjust size as needed */
+    margin-right: 55px;
+  }
+  
+  .nav-links {
+    display: flex; /* Align nav links horizontally */
+    justify-content: flex-end; /* Align nav links to the right */
+    gap: 20px; /* Add spacing between links */
+  }
+  
+  .nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links ul li {
+    position: relative;
+    
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links ul li a:hover {
+    color: #76cee6;
+  }
+  
+  .hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+  }
+  
+  /* Hamburger bars */
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in;
+    margin-left: 30px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    body{
+      overflow-x: hidden;
+    }
+    .header {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .logo-container {
+      order: 2; /* Move logo to the bottom on smaller screens */
+    }
+  
+    .nav-links {
+      order: 3; /* Move nav links to the bottom on smaller screens */
+      display: none; /* Hide nav links by default on smaller screens */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute;
+      top: 90px; /* Adjust top position as needed */
+      left: 0;
+      background-color: #00000000; /* Background color for mobile nav */
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      align-items: flex-start;
+      
+      
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show nav links when active */
+      
+
+    }
+  
+    .hamburger {
+      order: 1; /* Move hamburger menu to the top on smaller screens */
+      display: block; /* Show hamburger menu */
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+    
+  }
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+
+  .contact-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+  .contact2-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+  
+
+  .sub-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+  .recruitment-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+  .login-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+
+  .recruitment img {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -70px;
+    width: 200px;
+  }
+  nav {
+    height: 80px;
+    padding: 0px;
+  }
+
+  .home-link {
+    display: block;
+}
+
+
+  .nav-links {
+    display: none; /* Hide navigation links by default on smaller screens */
+    
+  }
+
+  .sub-header h1{
+    text-align: center;
+    margin-top: 220px;
+    font-size: 50px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+  .recruitment-header h1{
+    text-align: center;
+    margin-top: 220px;
+    font-size: 50px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+  .member-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+  .nav-links.active {
+    position: absolute;
+    background: black;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    text-align: left;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the cross axis (left) */
+    justify-content: flex-start; /* Align items to the start of the main axis (top) */
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+  .nav-links ul {
+    list-style: none;
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adjust spacing */
+  }
+
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+  }
+
+  .nav-links ul li a:hover {
+    color: #76cee6;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+    align-items: flex-start;
+  }
+
+  /* Add click event to hamburger menu */
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .nav-links ul li:nth-child(4) {
+    display: none; /* Hide the middle link */
+  }
+
+  .nav-links ul {
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .aboutUs p{
+    font-size: 16px; /* Adjust font size as needed */
+    margin-top: -20px;
+  }
+
+  .service-content{
+    display: block; /* Use flexbox to align items */
+    align-items: flex-start; /* Center align items vertically */
+  }
+
+  .brotherhood-content{
+    display: block; /* Use flexbox to align items */
+    align-items: flex-start; /* Center align items vertically */
+  }
+
+  .brotherhood-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-top: 20px;
+  }
+
+  .service-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-top: 20px;
+  }
+
+  .social-content{
+    display: block; /* Use flexbox to align items */
+    align-items: flex-start; /* Center align items vertically */
+  }
+
+  .social-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-top: 20px;
+  }
+
+  .speaker-content{
+    display: block; /* Use flexbox to align items */
+    align-items: flex-start; /* Center align items vertically */
+  }
+
+  .speaker-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-top: 20px;
+  }
+  
+  .footer {
+    background-color: #000000; /* Change as needed */
+    color: white;
+    padding: 70px 25px !important; /* Adjust padding to make the footer taller for smaller screens */
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning of the copyright */
+  }
+
+  .brotherhood-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 25px;
+
+  }
+
+  .pumpkin-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 5px;
+
+  }
+
+  .construction-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 5px;
+
+  }
+
+  .cornhole-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 5px
+
+  }
+
+  .social-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 25px;
+    
+  }
+
+
+  
+
+  .service-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 25px;
+  }
+
+  
+  .speaker-photo{
+    width: 220px;
+    height: 120px;
+    background-position: center;
+    scale: 120%;
+    margin-left: 25px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 430px){
+  .contactFlex{
+    justify-content: center; 
+  }
+
+  .contactFlex .large-input{
+    width: 225px;
+  }
+
+  .social-links{
+    margin-bottom: 30px;
+  }
+  
+
+  .contact {
+    font-size: 10px;
+    .first{
+      display: none;
+    }
+
+    .second{
+      display: contents;
+    }
+}
+  
+  
+
+  .brotherhood-photo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 175px;  
+
+  }
+
+
+  
+
+  .service-photo{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 175px;  
+    
+
+  }
+
+  
+  .speaker-photo{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 175px;  
+   
+
+  }
+
+  .social-photo{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 175px;  
+    
+
+  }
+
+  .aboutUs{
+    text-align: center;
+    
+  }
+  .aboutUs h1{
+    text-align: center;
+    font-size: 30px;
+  }
+  .aboutUs h2{
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .speakers h2{
+    text-align: center !important;
+    font-size: 25px !important;
+  }
+
+  .Brotherhood h2{
+    text-align: center !important;
+    font-size: 25px !important;
+  }
+
+  .service h2{
+    text-align: center !important;
+    font-size: 25px !important;
+  }
+  
+
+  .sub-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+  .recruitment-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+
+
+  .contact-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+  
+
+  .login-header h1{
+    text-align: center;
+    margin-top: 270px;
+    font-size: 40px;
+    color: white;
+    opacity: 0.999999;
+  }
+  
+
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .footer {
+    background-color: #000000; /* Change as needed */
+    color: white;
+    padding: 20px !important; /* Adjust padding to make the footer taller for smaller screens */
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning of the copyright */
+  }
+
+  .header {
+    min-height: 95vh;
+    width: 100%;
+    background-image: url("PBEimages/pbeZachSmaller-min.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+} 
+
+.footer {
+  background-color: #000000; /* Change as needed */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative; /* Position relative for absolute positioning of the copyright */
+}
+
+
+.footer h3 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin: 0 10px;
+}
+
+.footer ul li a img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+}
+
+.footer .copyright {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+}
+
+/* Donation Link button */
+.donate-cta { text-align:center; margin: 32px 0 56px; }
+.donate-cta h2 { margin: 0; }
+
+.donate-btn {
+  position: static !important;
+  display: inline-block;
+  background-color: #76cee6;
+  color: #fff;
+  padding: 16px 36px;   /* thicker/taller button on desktop */
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2em;     /* bigger text */
+  font-weight: 600;     /* extra bold */
+  line-height: 1.2;
+  border: 3px solid red;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .donate-cta { margin: 15vh 0 72px; padding: 0 16px; text-align: center; }
+  .donate-cta h2 { margin: 0; font-size: 1.2rem; line-height: 1.2; }
+
+  .donate-btn {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 12px 18px;              /* a bit slimmer on mobile */
+    font-size: 1rem;               /* smaller text for mobile */
+    font-weight: 600;
+    line-height: 1.15;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid red;
+  }
+
+  .first { flex-wrap: wrap; gap: 8px 24px; justify-content: center; }
+  .second { padding-bottom: 16px; }
+}
+
+/* Extra space so the button/back-to-top never overlap names */
+section.contact { padding-bottom: 96px; }
+
+
+/* Photo slide show */
+/* === Slideshow Styles === */
+.slider {
+  max-width: 960px;
+  margin: 40px auto;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background:#111;
+}
+.slider::before { content:""; display:block; padding-top:56.25%; } /* 16:9 */
+.slides, .slide, .slide img { position:absolute; inset:0; }
+.slides {
+  display:flex; height:100%; width:100%;
+  transform: translateX(0%); transition: transform 420ms ease;
+}
+.slide { min-width:100%; height:100%; }
+.slide img { width:100%; height:100%; object-fit:cover; }
+
+.nav-btn {
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:42px; height:42px; border:none; border-radius:50%;
+  background:rgba(0,0,0,.45); color:#fff; cursor:pointer;
+}
+.nav-btn:hover { background:rgba(0,0,0,.65) }
+.nav-prev { left:12px }
+.nav-next { right:12px }
+
+.dots {
+  position:absolute; left:0; right:0; bottom:10px;
+  display:flex; gap:8px; justify-content:center;
+}
+.dot {
+  width:9px; height:9px; border-radius:50%;
+  background:#fff; opacity:.6; border:0; cursor:pointer;
+}
+.dot[aria-current="true"] { background:#76cee6; opacity:1 }
+
+
+
+
+/* Golf tournament button */
+.center-brand{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+}
+
+.center-brand img{
+    height:34px;
+}
+
+.header {
+    position: relative;
+}
+
+
+
+/* Make header overlay NOT cover nav/bar content */
+.header { position: relative; }
+
+
+/* Ensure nav sits above overlay */
+.header nav{
+  position: relative;
+  z-index: 2;
+}
+
+/* Announcement bar under nav */
+.announcement-bar {
+  position: absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+}
+
+.header { position: relative; }
+
+.header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.35);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.header nav{ position: relative; z-index: 2; }
+.announcement-bar{ position: relative; z-index: 2; }
+
+.golf-btn{
+  display:inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+  background: #76cee6;
+  border: none;
+  outline: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  white-space: nowrap;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.golf-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.45);
+}
+
+
+.golf-btn:hover{
+    background:#76cee6;
+}
+/* Center logo + button stack (desktop) */
+.center-brand{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+}
+
+/* Mobile button styling inside hamburger menu */
+.golf-btn-mobile{
+  display:none;               /* hidden on desktop */
+  margin:14px auto 8px;
+  text-align:center;
+  width:fit-content;
+}
+
+/* Simple show/hide helpers */
+.desktop-only{ display:list-item; }
+
+@media (max-width: 768px){
+  .desktop-only{ display:none; }  /* hide center button on mobile */
+  .golf-btn-mobile{ display:inline-block; } /* show mobile button */
+}
+
+/* member of the month styles */
+.motm{
+  padding: 30px 8%;
+}
+
+.motm-card{
+  display:flex;
+  gap:22px;
+  align-items:center;
+  justify-content:space-between;
+  padding:22px;
+  border-radius:16px;
+  background: rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(8px);
+}
+
+.motm-left h2{
+  margin:0;
+  font-size:22px;
+}
+
+.motm-month{
+  margin:6px 0 10px;
+  opacity:.8;
+}
+
+.motm-name{
+  margin:0 0 8px;
+  font-size:26px;
+}
+
+.motm-why{
+  margin:0 0 14px;
+  opacity:.9;
+  max-width:520px;
+}
+
+.motm-btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  color:#fff;
+  background:#76cee6;
+}
+
+.motm-right img{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border-radius:14px;
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+/* mobile */
+@media (max-width: 768px){
+  .motm-card{
+    flex-direction:column-reverse;
+    text-align:center;
+  }
+  .motm-right img{
+    width:160px;
+    height:160px;
+  }
+}
+
+
+/* ===== Golf button + mobile menu fixes (override) ===== */
+
+/* Desktop announcement bar stays under nav */
+.announcement-bar{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 14px 12px;
+  background: rgba(0,0,0,0);
+  backdrop-filter: transparent(8px);
+  border-top: 1px solid rgba(255,255,255,0);
+  border-bottom: 1px solid rgba(255,255,255,0);
+}
+
+/* Base golf button (desktop) */
+.golf-btn{
+  display:inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+  background: #76cee6;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Hide the center-logo li on mobile (you already use this class) */
+.desktop-only{ display:list-item; }
+
+/* MOBILE */
+@media (max-width: 768px){
+
+  /* Remove the desktop announcement bar from mobile so it doesn't duplicate */
+  .announcement-bar{ display:none; }
+
+  .desktop-only{ display:none; }
+
+  /* Make the slide-out menu content layout clean + centered */
+  .nav-links.active{
+    width: 220px;              /* a little wider */
+    padding-top: 48px;         /* room for the X */
+  }
+
+  .nav-links.active ul{
+    width: 100%;
+    align-items: flex-start;   /* left align like a normal menu */
+  }
+
+  .nav-links.active ul li{
+    width: 100%;
+  }
+
+  /* Make ALL menu links consistent sizing */
+  .nav-links.active ul li a{
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  /* Make the mobile golf button NOT huge / not floating */
+.golf-btn.golf-btn-mobile{
+  display: inline-flex;      
+  align-items: center;
+  justify-content: center;
+
+  width: auto !important;   
+  min-width: 0;
+  margin: 14px auto 0;
+
+  padding: 6px 10px;         
+  font-size: 14px;
+
+  border-radius: 999px;
+  box-shadow: none;
+  background: rgba(118, 206, 230, 0.18);
+  color: #fff;
+}
+
+  .golf-btn.golf-btn-mobile:hover{
+    background: rgba(118, 206, 230, 0.28);
+  }
+}
+
+/* Force the menu golf link hidden on desktop */
+.golf-btn-mobile{ display: none !important; }
+
+/* Only show it on mobile */
+@media (max-width: 768px){
+  .golf-btn-mobile{ display: block !important; }
+}
+
+/* ===== Final Mobile/Tablet Nav Override (active stylesheet) ===== */
+@media (max-width: 1024px){
+  body.nav-open{
+    overflow: hidden;
+  }
+
+  /* On tablet/mobile, use the menu golf button only */
+  .announcement-bar{
+    display: none !important;
+  }
+
+  .desktop-only{
+    display: none !important;
+  }
+
+  .mobile-only-nav-item{
+    display: list-item !important;
+  }
+
+  nav{
+    position: relative;
+    z-index: 60;
+  }
+
+  .hamburger{
+    position: relative;
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: 0;
+    box-shadow: none;
+    display: grid !important;
+    place-items: center;
+    transition: background 0.22s ease, opacity 0.22s ease, transform 0.22s ease;
+  }
+
+  body.nav-open .hamburger{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-8px);
+  }
+
+  .bar{
+    margin: 3px 0;
+    width: 20px;
+    height: 2px;
+    margin-left: 0;
+    transition: transform 0.24s ease, opacity 0.2s ease;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(5px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-5px) rotate(-45deg);
+  }
+
+  .nav-links{
+    display: block !important;
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 90 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.24s ease;
+    background: rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(4px);
+  }
+
+  .nav-links ul,
+  .nav-links.active ul{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    height: 100% !important;
+    width: min(82vw, 420px) !important;
+    padding: calc(76px + env(safe-area-inset-top, 0px)) 18px calc(22px + env(safe-area-inset-bottom, 0px)) !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    list-style: none;
+    background: linear-gradient(160deg, rgba(7, 14, 23, 0.97), rgba(12, 32, 46, 0.94)) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 14px 0 32px rgba(0, 0, 0, 0.45);
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transform: translateX(-105%);
+    transition: transform 0.34s cubic-bezier(0.22, 0.9, 0.25, 1);
+    overflow-y: auto;
+  }
+
+  .nav-links.active{
+    opacity: 1;
+    pointer-events: auto;
+    background: rgba(5, 10, 18, 0.18) !important;
+    backdrop-filter: blur(2px);
+  }
+
+  .nav-links.active ul{
+    transform: translateX(0);
+  }
+
+  .nav-links ul li,
+  .nav-links.active ul li{
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links ul li{
+    opacity: 0;
+    transform: translateX(14px);
+    transition: transform 0.3s ease, opacity 0.24s ease;
+  }
+
+  .nav-links.active ul li{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-links.active ul li:nth-child(1){ transition-delay: 0.04s; }
+  .nav-links.active ul li:nth-child(2){ transition-delay: 0.07s; }
+  .nav-links.active ul li:nth-child(3){ transition-delay: 0.10s; }
+  .nav-links.active ul li:nth-child(4){ transition-delay: 0.13s; }
+  .nav-links.active ul li:nth-child(5){ transition-delay: 0.16s; }
+  .nav-links.active ul li:nth-child(6){ transition-delay: 0.19s; }
+  .nav-links.active ul li:nth-child(7){ transition-delay: 0.22s; }
+  .nav-links.active ul li:nth-child(8){ transition-delay: 0.25s; }
+
+  .nav-links ul li a,
+  .nav-links.active ul li a{
+    display: block !important;
+    width: min(92%, 320px) !important;
+    padding: 11px 12px !important;
+    border-radius: 10px;
+    font-size: 16px !important;
+    line-height: 1.25;
+    text-align: center;
+    color: #f7fbff;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4px);
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  }
+
+  .nav-links ul li a:hover{
+    background: rgba(118, 206, 230, 0.16);
+    color: #d8f4ff;
+    transform: translateX(3px);
+  }
+
+  .close-btn{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    right: auto;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    font-size: 23px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .close-btn:hover{
+    background: rgba(118, 206, 230, 0.18);
+    border-color: rgba(118, 206, 230, 0.45);
+  }
+
+  .golf-btn.golf-btn-mobile{
+    width: 100% !important;
+    margin-top: 10px;
+    padding: 10px 12px !important;
+    justify-content: center;
+    border: 1px solid rgba(118, 206, 230, 0.42);
+    background: rgba(118, 206, 230, 0.2);
+    color: #effbff;
+  }
+}
+
+@media (max-width: 768px){
+  .nav-links ul,
+  .nav-links.active ul{
+    width: min(88vw, 360px) !important;
+  }
+}
