@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Professional Brotherhood of Engineers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="PBEimages\favicon.ico">
+    <meta name="theme-color" content="black">
+    <script type="text/javascript">
+        var submitted = false;
+
+        function validateForm() {
+            // Get all input elements
+            var inputs = document.querySelectorAll('.recruitmentFlex input[type="text"]');
+            // Loop through inputs to check for empty values
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value.trim() === "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+            }
+            submitted = true;
+            return true;
+        }
+    </script>
+
+
+  <script src="components/page-hero.js" defer></script>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="components/back-to-top.js" defer></script>
+  <script src="components/site-behavior.js" defer></script>
+</head>
+<body>
+<div data-page-hero data-hero-class="recruitment-header" data-hero-title="Recruitment"></div>
+
+
+
+  <section class = "recruitment">
+    <div>
+        <!--
+        <h1>Applications for Spring 2026 are open and due on January  25th! Join our Recruitment GroupMe for updates!</h1>
+    -->
+        
+        <!-- Buttons Section 
+        
+        <div >
+            <a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeLNJPoWL_4qJve3_ZXxQGKUmzLjleBGa9wuIVDFTWT62X0rw/viewform?usp=publish-editor&authuser=2" target="_blank">
+                <button>Apply Now</button>
+            </a>
+        </div>
+        
+        <a href="https://groupme.com/join_group/112354243/9DTWrEWC" target="_blank">
+            <button>GroupMe</button>
+        </a>
+    
+        <h2>Explore our upcoming recruitment schedule below!</h2>
+        
+    </div> 
+    -->
+    <!-- Recruitment countdown -->
+     <!--
+    <div id="countdown" style="text-align:center; color:white; font-size:28px; font-weight:700; margin-top:20px;">
+
+    Recruitment Opens In: <span id="timer"></span>
+    </div>
+     -->
+    <script>
+    // ===== Manually set recruitment start date here =====
+    const recruitmentDate = new Date("August 24, 2025 18:00:00").getTime();
+
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = recruitmentDate - now;
+
+        if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = 
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        } else {
+        clearInterval(countdownFunction);
+        document.getElementById("countdown").innerHTML = 
+            `<span style="color:#76cee6;">Recruitment is Now Open!</span>`;
+        }
+    }, 1000);
+    </script>
+
+    
+
+    <h1>Recruitment for Fall 2026 has concluded! <br><br>Fill out the form below for Spring 20256 updates!</h1>
+  
+    
+    <div class="recruitmentMedia"> 
+        <h2 style="font-size: 30px; margin-bottom: 10px; margin-top: 20px; ">Recruitment Video</h2>
+        <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pcwvhLIUrio?si=6lmv4YZV03SxkGGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> 
+<!--    
+        <h2 style = "font-size: 30px; margin-bottom: 1px; margin-top: 15px;">Recruitment Schedule</h2>
+      <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
+      <div class = "recruitment-schedule">
+        
+        <h2 class = "recruitment-events">
+            Applications open:
+        </h2>
+        <h2 class = "recruitment-dates">
+            1/12 - 1/25
+        </h2>
+
+        <h2 class = "recruitment-events">
+            Bannering:
+        </h2>
+        <h2 class = "recruitment-details">
+            Zachary Engineering Complex
+        </h2>
+        <h2 class = "recruitment-dates">
+            1/25 - 1/15
+        </h2>
+
+        <h2 class = "recruitment-events">
+            MSC Open House:
+        </h2>
+        <h2 class = "recruitment-details">
+            MSC
+        </h2>
+
+        <h2 class = "recruitment-dates">
+            1/19
+        </h2>
+
+        <h2 class = "recruitment-events">
+            Informational #1:
+        </h2>
+        <h2 class = "recruitment-details">
+            HECC 209 @ 7:00pm - 8:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            1/20
+        <h2 class = "recruitment-events">
+            Informational #2:
+        </h2>
+        <h2 class = "recruitment-details">
+            HECC 209 @ 7:00pm - 8:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            1/21
+        </h2>
+        
+        <h2 class = "recruitment-events">
+           Rec Night:
+        </h2>
+        <h2 class = "recruitment-details">
+            Student Rec Center / Main Rec @ 6:00pm - 9:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            9/2
+        </h2>
+        
+        <h2 class = "recruitment-events">
+            Career Event:
+        </h2>
+        <h2 class = "recruitment-details">
+            ILCB 205 @ 7:00pm - 8:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            1/22
+        </h2>
+
+        <h2 class = "recruitment-events">
+            Pizza Social:
+        </h2>
+        <h2 class = "recruitment-details">
+            Blaze Pizza @ 6:00pm -9:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            1/23
+        </h2>
+        
+        <h2 class = "recruitment-events">
+            Park Grill Out:
+        </h2>
+        </h2>
+        <h2 class = "recruitment-details">
+            Sue Haswell Memorial Park @ 1:00pm - 3:00pm
+        </h2>
+        <h2 class = "recruitment-dates">
+            1/24
+        </h2>
+      </div>
+    
+    </div>
+-->
+
+        <h2 style="font-size: 30px; margin-bottom: 10px; margin-top: 40px; ">Recruitment Update Form</h2>
+        <div style="border-top: 4px solid #76cee6; margin: 20px 0;"></div>
+        <div class="recruitment-form">
+            <img src="PBEimages\Spring 24 Flyer Final.png">
+            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){window.location='./submitted';}">
+            </iframe>
+            <form class="recruitmentFlex" action="https://docs.google.com/forms/d/e/1FAIpQLSdCcAADdMxZZWWhKw4HU7PcwMHNlHnKEsOCXu7XrxcL7MaziA/formResponse" 
+                  method="post" target="hiddenConfirm" onsubmit="return validateForm()">
+                <label for="entry.1328555469">First Name</label><br>
+                <input type="text" name="entry.1328555469" placeholder="First"><br>
+                <label for="entry.1502007998">Last Name</label><br>
+                <input type="text" name="entry.1502007998" placeholder="Last"><br>
+                <label class="email" for="entry.1590393024">Email</label><br>
+                <input type="text" name="entry.1590393024" placeholder="example@email.com"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+      
+  </section>
+  
+  <div id="site-footer"></div>
+
+  <div id="site-back-to-top"></div>
+
+
+</body>
+</html>
