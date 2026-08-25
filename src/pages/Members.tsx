@@ -7,7 +7,7 @@ const officersSorted = [...officers].sort((a, b) => a.role.localeCompare(b.role)
 export default function Members() {
   return (
     <>
-      <PageHero title="Members" backgroundImage="/PBEimages/OfficersPhoto.jpeg" backgroundPosition="center 35%" backgroundSize="105%" />
+      <PageHero title="Members" backgroundImage="/PBEimages/OfficersPhoto.jpeg" backgroundPosition="center 10%" backgroundSize="105%" />
 
       <section className="bg-black px-6 py-16">
         <h1 className="mb-10 text-center font-heading text-3xl text-pbe-blue">Executive Team</h1>
