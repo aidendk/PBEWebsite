@@ -77,6 +77,7 @@ export const officers: Member[] = [
     name: 'Cem Pala',
     role: 'Academic',
     image: '/PBEimages/MemberImages/Cem_Pala.jpg',
+    linkedin: 'https://www.linkedin.com/in/cem-pala-030abb430/',
     email: 'cempala7@tamu.edu',
   },
   {
